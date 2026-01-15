@@ -29,7 +29,7 @@ html,body{
     height: 100%;
 }
 body{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100%;
     font-size: 15px;
@@ -82,7 +82,7 @@ img {
     margin-bottom: 5%;
 }
 .section-header span{
-    color: #f8494c;
+    color: #28a745;
     letter-spacing: 2px;
     font-family: inherit;
     text-transform: uppercase;
@@ -123,7 +123,7 @@ img {
 }
 .loader:before, .loader:after {
     content: '';
-    border: 1em solid #f8494c;
+    border: 1em solid #28a745;
     border-radius: 50%;
     width: inherit;
     height: inherit;
@@ -176,16 +176,16 @@ img {
     margin-top: 0;
 }
 .sticky_navigation .navbar-brand, .sticky_navigation .navbar-brand span {
-    color: #f8494c;
+    color: #28a745;
 }
 .sticky_navigation .navbar-brand:hover, .sticky_navigation .navbar-brand:focus, .sticky_navigation .navbar-brand span {
-    color: #f8494c;
+    color: #28a745;
 }
 .sticky_navigation .nav li a {
     color: #ffffff;
 }
 .sticky_navigation .nav li.active a{
-    color: #f8494c;
+    color: #28a745;
 }
 .sticky_navigation .navbar-brand:hover{
     color: #333333;
@@ -582,6 +582,11 @@ span#nav-close {
     font-weight: bold;
 }
 
+.welcome-text h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 .welcome-text h2 span {
 	color: #F8494C;
 }
@@ -595,7 +600,7 @@ span#nav-close {
 }
 
 .banner-btn a {
-    background-color: #f8494c;
+    background-color: #28a745;
     color: #ffffff;
     padding: 10px 35px;
     display: inline-block;
@@ -682,7 +687,7 @@ span#nav-close {
 	color: #c2c0c3;
 }
 .text-primary {
-    color: #f8494c;
+    color: #28a745;
 }
 .skillbar {
     margin-bottom: 24px;
@@ -745,9 +750,9 @@ span#nav-close {
     background: #121d30;
 }
 .single-services:hover{
-    background-color: #f8494c;
+    background-color: #28a745;
     transition: ease .3s;
-    border-color: #f8494c;
+    border-color: #28a745;
 }
 .single-services:hover .services-icon i{
     color: #ffffff;
@@ -947,7 +952,7 @@ span#nav-close {
 	color: #c2c0c3;
 }
 .left-c-text h3 {
-	background: #f8494c;
+	background: #28a745;
 	padding: 6px 0;
 	border-radius: 25px;
 	color: #fff;
@@ -961,7 +966,7 @@ span#nav-close {
 }
 .address i {
     font-size: 32px;
-    color: #f8494c;
+    color: #28a745;
 }
 .address span {
     font-weight: bold;
@@ -977,7 +982,7 @@ span#nav-close {
     margin-left: 55px;
 }
 .btn.btn-send {
-   background-color: #f8494c;
+   background-color: #28a745;
    color: #ffffff;
    padding: 19px 36px;
    display: inline-block;
@@ -1018,5 +1023,302 @@ span#nav-close {
     padding: 30px 0;
 }
 .footer-area a{
-    color: #f8494c;
+    color: #28a745;
+}
+
+/* Custom styles for portfolio items */
+.portfolio-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #28a745 #f1f1f1;
+    scroll-snap-type: x mandatory;
+}
+
+.portfolio-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.portfolio-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.portfolio-scroll::-webkit-scrollbar-thumb {
+    background: #28a745;
+    border-radius: 10px;
+}
+
+.portfolio-scroll::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
+.portfolio-item-scroll {
+    flex: 0 0 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 15px;
+    scroll-snap-align: start;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio-item-scroll:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.portfolio-item-scroll img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.portfolio-item-scroll h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #000;
+}
+
+.portfolio-item-scroll p {
+    font-size: 14px;
+    color: #333;
+}
+
+.portfolio-item-scroll .btn {
+    margin-top: 10px;
+}
+
+/* Services scroll styles */
+.services-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #28a745 #f1f1f1;
+    scroll-snap-type: x mandatory;
+}
+
+.services-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.services-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.services-scroll::-webkit-scrollbar-thumb {
+    background: #28a745;
+    border-radius: 10px;
+}
+
+.services-scroll::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
+.services-item-scroll {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+}
+
+/* Services content text colors */
+.services-content h3 {
+    color: #000;
+}
+
+.services-content p {
+    color: #333;
+}
+
+/* Achievements styles */
+.achievements {
+    margin-top: 30px;
+}
+
+.achievements h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.achievements ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.achievements i {
+    color: #28a745;
+    margin-right: 10px;
+}
+
+/* Modern UI Enhancements */
+body {
+    font-family: 'Roboto Slab', serif;
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+.banner-area {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0,123,255,0.1) 0%, rgba(0,86,179,0.1) 100%), url('images/home/home-1.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 2;
+}
+
+.btn {
+    background: linear-gradient(45deg, #28a745, #0056b3);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+}
+
+.btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,123,255,0.4);
+    color: white;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.single-services {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.single-services:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.about-right, .about-left {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-img {
+    flex: 0 0 250px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2, .about-content h3, .about-content p {
+    color: #000;
+}
+
+/* Mobile responsiveness for about card */
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-img {
+        flex: none;
+        margin-bottom: 20px;
+    }
+}
+
+.about-right p {
+    color: #000;
+}
+
+.about-right h3 {
+    color: #000;
+}
+
+.contact-area {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.contact-area h2, .contact-area p {
+    color: white;
+}
+
+.contact-area .address {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-area {
+    background: #333;
+    color: white;
 }

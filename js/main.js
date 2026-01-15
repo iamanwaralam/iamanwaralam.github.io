@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     $(function() {
         element.typed({
-           strings: ["Android Developer.","Flutter Developer.","Wordpress Developer", "Designer.", "Freelancer."],
+           strings: ["Android Developer 🚀","Flutter Developer 💻","WordPress Expert 🌐", "SEO Specialist 📈", "Data Analyst 📊", "Freelancer 🌟"],
            loop: true,
            typeSpeed: 90
        });
@@ -114,4 +114,11 @@ skillbar.waypoint(function () {
 }, {
   offset: "80%"
 });
+});
+
+// Contact form submit handler
+$('#contact-form').on('submit', function(e) {
+    e.preventDefault();
+    $('.messages').html('<div class="alert alert-success">Thank you for your message! I will get back to you soon.</div>');
+    this.reset();
 });

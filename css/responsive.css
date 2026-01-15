@@ -91,7 +91,7 @@ Version: 1.0
         font-size: 22px;
     }
     .navbar-toggle .icon-bar {
-        background: #f8494c;
+        background: #28a745;
     }
     .navbar-nav {
         float: right;
@@ -233,7 +233,7 @@ Version: 1.0
         width: 100%;
     }
     .navbar-toggle .icon-bar {
-        background: #f8494c;
+        background: #28a745;
     }
     .mouse-icon {
         bottom: -300px;
