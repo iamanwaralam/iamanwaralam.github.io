@@ -1,0 +1,5 @@
+# Anwar Alam — Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://iamanwaralam.github.io/sitemap.xml

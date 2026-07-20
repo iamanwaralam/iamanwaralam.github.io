@@ -1,0 +1,9 @@
+export { Hero } from './Hero';
+export { About } from './About';
+export { TechStack } from './TechStack';
+export { Services } from './Services';
+export { Experience } from './Experience';
+export { Projects } from './Projects';
+export { Certifications } from './Certifications';
+export { Testimonials } from './Testimonials';
+export { Contact } from './Contact';
