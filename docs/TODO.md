@@ -8,10 +8,10 @@ Most content is now verified from the official CV
       `2.png` (dev-workspace look) optimized to `anwar-hero.jpg` (54 kB) and
       wired into the hero. Alternates 1/3/4.png remain — swap `PHOTO_SRC` in
       `src/sections/hero/HeroPhoto.tsx` to change.
-- [x] **Project screenshots** — akiuae.jpg and esthica.jpg captured from the
-      live sites, optimized, and wired into both the project card and case
-      study page. Beatryx and Flavor & Figures still need a screenshot, but
-      have no public URL yet to capture from (see below).
+- [x] **Project screenshots** — all 5 projects done. akiuae.jpg, esthica.jpg,
+      beatryx.jpg, flavor-and-figures.jpg captured from the live sites,
+      optimized, and wired into both the project card and case study page.
+      Google Play Apps has no single site to screenshot (GitHub-linked only).
 - [x] **OG social share image** (1200×630) generated at `public/og/og-image.jpg`
       — branded card with real headshot, name, role, and tagline. Replace with
       a designed version anytime; it's referenced from `index.html` and
@@ -19,9 +19,8 @@ Most content is now verified from the official CV
 - [ ] Favicon set / brand mark (SVG placeholder currently in use).
 
 ## Content to confirm
-- [ ] **Live URLs** for Beatryx and Flavor & Figures — cards currently omit
-      the live button, and no screenshot can be captured until these are
-      public. Add to `src/data/projects.ts` when available.
+- [x] Live URLs for Beatryx (beatryx.com) and Flavor & Figures
+      (flavorandfigures.com) — added, live button + screenshot both wired.
 - [ ] **Certification details** — issuer + year for Android Developer,
       Flutter Developer, Digital Marketing & SEO (`src/data/certifications.ts`).
 - [x] Testimonials — 3 real client quotes added (Esthica, AK International,

@@ -36,8 +36,9 @@ export const PROJECTS: Project[] = [
       'Built a Next.js headless storefront for Beatryx with checkout integrated directly into the Esthica Shopify backend — combining a bespoke front-end experience with Shopify’s commerce engine.',
     tech: ['Next.js', 'Shopify Headless', 'TypeScript'],
     category: 'E-commerce',
+    liveUrl: 'https://beatryx.com',
     featured: true,
-    // liveUrl: TODO(anwar): add if public
+    image: '/projects/beatryx.jpg',
   },
   {
     slug: 'flavor-and-figures',
@@ -46,7 +47,8 @@ export const PROJECTS: Project[] = [
       'Developed a Next.js content platform for Flavor & Figures, a Dubai food media channel — a fast, SEO-friendly publishing experience for a growing audience.',
     tech: ['Next.js', 'Content Platform', 'SEO'],
     category: 'Web',
-    // liveUrl: TODO(anwar): add if public
+    liveUrl: 'https://flavorandfigures.com',
+    image: '/projects/flavor-and-figures.jpg',
   },
   {
     slug: 'google-play-apps',
