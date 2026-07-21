@@ -37,7 +37,7 @@ export const STATS: Stat[] = [
 ];
 
 export const SOCIALS: SocialLink[] = [
-  { label: 'GitHub', href: 'https://github.com/newgalaxian', icon: 'github' },
+  { label: 'GitHub', href: 'https://github.com/iamanwaralam', icon: 'github' },
   {
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/iamanwaralam/',

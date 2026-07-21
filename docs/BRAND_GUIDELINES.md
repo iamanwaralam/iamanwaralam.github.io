@@ -20,8 +20,8 @@
 | --- | --- | --- |
 | Email | iamanwaralam48@gmail.com | verified from live site |
 | Phone / WhatsApp | +971 58 661 9341 | verified from live site |
-| GitHub | https://github.com/newgalaxian | verified |
-| LinkedIn | https://www.linkedin.com/in/newgalaxian/ | verified |
+| GitHub | https://github.com/iamanwaralam | verified |
+| LinkedIn | https://www.linkedin.com/in/iamanwaralam/ | verified |
 | Instagram | https://www.instagram.com/anwaralam4u/ | verified |
 | Twitter / X | https://twitter.com/anwar_alam4U | verified |
 

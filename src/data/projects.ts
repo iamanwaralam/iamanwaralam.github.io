@@ -54,6 +54,6 @@ export const PROJECTS: Project[] = [
       'Developed and published Android apps (Java, Flutter) on Google Play, including Islamic utility apps for international users, with legacy Java apps migrated to Flutter on Firebase (Realtime DB, Auth, Analytics).',
     tech: ['Flutter', 'Dart', 'Android (Java)', 'Firebase'],
     category: 'Mobile',
-    githubUrl: 'https://github.com/newgalaxian',
+    githubUrl: 'https://github.com/iamanwaralam',
   },
 ];
