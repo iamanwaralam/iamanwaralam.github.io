@@ -14,11 +14,12 @@ export const EXPERIENCE: ExperienceItem[] = [
     current: true,
     responsibilities: [
       'Rebuilt the corporate website (akiuae.com) as a Next.js 14 app with 32 statically generated routes, improving load performance and Core Web Vitals.',
+      'Build and maintain numerous other product web pages and applications across the business in WordPress and React Native.',
       'Led a zero-downtime DNS & hosting migration from GoDaddy to Vercel, preserving Microsoft 365 email records with no interruption.',
-      'Drove technical, on-page, and off-page SEO; grew organic traffic and rankings tracked via GA4 and Search Console.',
+      'Drive SEO and digital marketing, with technical, on-page, and off-page SEO and analytics tracked via GA4 and Search Console.',
       'Administer email systems (Microsoft 365, Google Workspace, cPanel), domains, SSL, and hosting; own security, backups, and DR readiness.',
     ],
-    stack: ['Next.js 14', 'Vercel', 'SEO', 'GA4', 'Microsoft 365'],
+    stack: ['Next.js 14', 'WordPress', 'React Native', 'SEO', 'Digital Marketing', 'Vercel'],
   },
   {
     company: 'Independent eCommerce & Web Projects',

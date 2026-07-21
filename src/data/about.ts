@@ -6,7 +6,7 @@
 
 export const ABOUT_STORY: string[] = [
   'I’m a full-stack developer with 8+ years across web and mobile, including the last 4 years based in Dubai, UAE. My focus today is building fast, modern web applications with Next.js and shipping e-commerce experiences that convert.',
-  'At AK International I rebuilt the company’s corporate site as a Next.js 14 application with 32 statically generated routes, then led a zero-downtime migration to Vercel — preserving Microsoft 365 email with no interruption. Alongside that I ship custom Shopify OS 2.0 themes and headless storefronts for UAE brands, and own the SEO, analytics, and infrastructure that keep them performing.',
+  'At AK International I rebuilt the company’s corporate site as a Next.js 14 application with 32 statically generated routes, then led a zero-downtime hosting migration — preserving Microsoft 365 email with no interruption. I also build and maintain many of the business’s other product pages and websites in WordPress, and drive the SEO, digital marketing, analytics, and infrastructure that keep everything performing securely. Alongside that I ship custom Shopify OS 2.0 themes and headless storefronts for UAE brands.',
   'Before the web, I spent years as an Android and Flutter developer with published Google Play apps. That mobile background — plus an early move into AI-assisted engineering with Claude Code and MCP — shapes how I build: pragmatic, measurable, and fast.',
 ];
 
