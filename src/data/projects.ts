@@ -51,6 +51,46 @@ export const PROJECTS: Project[] = [
     image: '/projects/flavor-and-figures.jpg',
   },
   {
+    slug: 'r3hrs',
+    title: 'R3 — Hair Revitalizing Spray',
+    description:
+      'Migrated R3’s hair-revitalizing product site from WordPress to Next.js — a peptide-based follicle recovery brand built around Redensyl®, AnaGain™, and Baicapil™ actives, rebuilt for speed and easier content updates.',
+    tech: ['Next.js', 'WordPress Migration', 'SEO'],
+    category: 'Web',
+    liveUrl: 'https://r3hrs.com',
+    image: '/projects/r3hrs.jpg',
+  },
+  {
+    slug: 'ceovia',
+    title: 'Ceovia — Wellness System',
+    description:
+      'Rebuilt Ceovia’s 90-day wellness supplement site from WordPress to Next.js — a Himalayan Sea Buckthorn-based daily wellness system with a premium, editorial product presentation.',
+    tech: ['Next.js', 'WordPress Migration', 'SEO'],
+    category: 'Web',
+    liveUrl: 'https://ceovia.com',
+    image: '/projects/ceovia.jpg',
+  },
+  {
+    slug: 'skinin',
+    title: 'Skinin — Micro-Needling System',
+    description:
+      'Migrated Skinin’s professional micro-needling device site from WordPress to Next.js — a clinical collagen-induction system site covering technology, treatment protocol, and professional resources.',
+    tech: ['Next.js', 'WordPress Migration', 'SEO'],
+    category: 'Web',
+    liveUrl: 'https://www.skinin.org',
+    image: '/projects/skinin.jpg',
+  },
+  {
+    slug: 'prizmah',
+    title: 'Prizmah — PRP System',
+    description:
+      'Rebuilt Prizmah’s autologous platelet-rich plasma (PRP/PRF) device site from WordPress to Next.js — covering technology, clinical applications, and compliance credentials (cGMP, ISO 13485, ISO 9001).',
+    tech: ['Next.js', 'WordPress Migration', 'SEO'],
+    category: 'Web',
+    liveUrl: 'https://prizmah.com',
+    image: '/projects/prizmah.jpg',
+  },
+  {
     slug: 'google-play-apps',
     title: 'Google Play Apps',
     description:

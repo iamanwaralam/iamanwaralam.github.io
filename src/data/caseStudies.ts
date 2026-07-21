@@ -118,6 +118,91 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
   },
   {
+    slug: 'r3hrs',
+    tagline:
+      'Migrated R3’s hair-recovery product site from WordPress to a fast, modern Next.js build.',
+    overview:
+      'R3 needed its WordPress-based product site for a peptide-based hair follicle recovery spray rebuilt on modern infrastructure — faster, easier to maintain, and ready to scale content like the Science and Blog sections.',
+    problem: [
+      'The existing WordPress site was slower and harder to extend than the brand needed.',
+      'Content across Science, Products, and Blog sections needed a more maintainable structure.',
+    ],
+    solution: [
+      'Rebuilt the site from WordPress to Next.js, preserving the existing content and product pages.',
+      'Restructured the Science, Products, and Blog sections for faster loads and easier updates.',
+      'Optimised the site for search visibility around the brand’s key actives (Redensyl®, AnaGain™, Baicapil™).',
+    ],
+    challenges: [
+      'Migrating existing WordPress content and URLs without losing SEO equity.',
+      'Matching the clinical, dermatologist-tested tone of the brand in a rebuilt front-end.',
+    ],
+    results: [
+      'A faster, modern Next.js site live at r3hrs.com.',
+      'A more maintainable content structure for ongoing Science and Blog updates.',
+    ],
+  },
+  {
+    slug: 'ceovia',
+    tagline: 'Rebuilt Ceovia’s 90-day wellness system site from WordPress to Next.js.',
+    overview:
+      'Ceovia’s clinically structured wellness system, built around Himalayan Sea Buckthorn bioactives, needed its WordPress site rebuilt for performance and a premium, editorial feel befitting a daily wellness product.',
+    problem: [
+      'The WordPress site needed a faster, more premium front-end to match the brand’s clinical positioning.',
+      'Science, Products, and Clinical Insight content needed a cleaner structure.',
+    ],
+    solution: [
+      'Rebuilt the site from WordPress to Next.js with a premium, editorial layout.',
+      'Restructured the Science, Products, Blog, and Clinical Insight sections for clarity and speed.',
+      'Optimised the site for search around the brand’s core ingredient story.',
+    ],
+    challenges: [
+      'Preserving a premium, clinical tone through the rebuild.',
+      'Migrating existing content without losing SEO equity.',
+    ],
+    results: ['A faster, premium Next.js site live at ceovia.com.'],
+  },
+  {
+    slug: 'skinin',
+    tagline:
+      'Migrated Skinin’s professional micro-needling device site from WordPress to Next.js.',
+    overview:
+      'Skinin, an advanced professional micro-needling system by AK Pharma, needed its WordPress site rebuilt to better present its technology, treatment protocol, and professional resources to clinics.',
+    problem: [
+      'The WordPress site needed to be faster and easier to maintain across Products, Technology, and Resources.',
+      'Professional and clinical audiences needed clear technology and treatment-protocol information.',
+    ],
+    solution: [
+      'Rebuilt the site from WordPress to Next.js, covering Products, Technology, Treatment Protocol, and Resources.',
+      'Structured the content for professional buyers evaluating a clinical device.',
+      'Optimised the site for search and page speed.',
+    ],
+    challenges: [
+      'Presenting technical, clinical information (depth control, sterilization, channel rate) clearly for professional buyers.',
+      'Migrating existing WordPress content without losing SEO equity.',
+    ],
+    results: ['A faster, professional Next.js site live at skinin.org.'],
+  },
+  {
+    slug: 'prizmah',
+    tagline: 'Rebuilt Prizmah’s PRP/PRF medical device site from WordPress to Next.js.',
+    overview:
+      'Prizmah, a proprietary autologous Platelet-Rich Plasma system used across aesthetic, orthopedic, wound, and dental care, needed its WordPress site rebuilt to better present its technology, applications, and compliance credentials.',
+    problem: [
+      'The WordPress site needed to be faster and better structured across Technology, Applications, and Resources.',
+      'Compliance credentials (cGMP, EN ISO 13485, ISO 9001) needed clear, credible presentation.',
+    ],
+    solution: [
+      'Rebuilt the site from WordPress to Next.js, covering Technology, Applications, Resources, and compliance information.',
+      'Structured content for clinical and professional buyers across multiple use cases.',
+      'Optimised the site for search and page speed.',
+    ],
+    challenges: [
+      'Communicating a medical device’s technology and compliance credentials clearly to a professional audience.',
+      'Migrating existing WordPress content without losing SEO equity.',
+    ],
+    results: ['A faster, professional Next.js site live at prizmah.com.'],
+  },
+  {
     slug: 'google-play-apps',
     tagline:
       'Published Android and Flutter apps — including Islamic utility apps for a global audience.',

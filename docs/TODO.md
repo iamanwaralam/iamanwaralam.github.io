@@ -8,10 +8,11 @@ Most content is now verified from the official CV
       `2.png` (dev-workspace look) optimized to `anwar-hero.jpg` (54 kB) and
       wired into the hero. Alternates 1/3/4.png remain — swap `PHOTO_SRC` in
       `src/sections/hero/HeroPhoto.tsx` to change.
-- [x] **Project screenshots** — all 5 projects done. akiuae.jpg, esthica.jpg,
-      beatryx.jpg, flavor-and-figures.jpg captured from the live sites,
-      optimized, and wired into both the project card and case study page.
-      Google Play Apps has no single site to screenshot (GitHub-linked only).
+- [x] **Project screenshots** — all 9 web/e-commerce projects done (akiuae,
+      esthica, beatryx, flavor-and-figures, r3hrs, ceovia, skinin, prizmah)
+      captured from the live sites, optimized, and wired into both the
+      project card and case study page. Google Play Apps has no single site
+      to screenshot (GitHub-linked only).
 - [x] **OG social share image** (1200×630) generated at `public/og/og-image.jpg`
       — branded card with real headshot, name, role, and tagline. Replace with
       a designed version anytime; it's referenced from `index.html` and
@@ -43,7 +44,8 @@ Most content is now verified from the official CV
 - [x] Certifications (titles): Android, Flutter, Digital Marketing & SEO.
 - [x] Skills grouped per CV (Frontend, Mobile, E-commerce, SEO & Analytics,
       Infrastructure, Tools & AI).
-- [x] Projects: AKIUAE, Esthica, Beatryx, Flavor & Figures, Google Play apps.
+- [x] Projects: AKIUAE, Esthica, Beatryx, Flavor & Figures, R3, Ceovia, Skinin,
+      Prizmah, Google Play apps.
 - [x] Contact: iamanwaralam48@gmail.com · +971 58 661 9341.
 - [x] Socials: GitHub, LinkedIn (in/iamanwaralam), Instagram, X.
 - [x] Resume PDF wired to the navbar / hero download buttons.
