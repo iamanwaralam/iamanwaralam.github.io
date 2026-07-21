@@ -126,16 +126,27 @@ export function CaseStudyPage() {
           </Container>
         </section>
 
-        {/* Screenshot placeholder */}
+        {/* Screenshot */}
         <Container>
           <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-border bg-[radial-gradient(ellipse_at_center,color-mix(in_oklab,var(--primary)_12%,transparent),transparent_70%)]">
-            <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-[size:32px_32px] opacity-[0.15]" />
-            <div className="absolute inset-0 grid place-items-center">
-              <p className="font-mono text-sm text-muted-foreground">
-                {/* TODO(anwar): add /public/projects/{slug}.png */}
-                Screenshot coming soon
-              </p>
-            </div>
+            {project.image ? (
+              <img
+                src={project.image}
+                alt={`${project.title} screenshot`}
+                loading="eager"
+                className="size-full object-cover object-top"
+              />
+            ) : (
+              <>
+                <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-[size:32px_32px] opacity-[0.15]" />
+                <div className="absolute inset-0 grid place-items-center">
+                  <p className="font-mono text-sm text-muted-foreground">
+                    {/* TODO(anwar): add /public/projects/{slug}.jpg */}
+                    Screenshot coming soon
+                  </p>
+                </div>
+              </>
+            )}
           </div>
         </Container>
 

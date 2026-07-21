@@ -8,8 +8,10 @@ Most content is now verified from the official CV
       `2.png` (dev-workspace look) optimized to `anwar-hero.jpg` (54 kB) and
       wired into the hero. Alternates 1/3/4.png remain — swap `PHOTO_SRC` in
       `src/sections/hero/HeroPhoto.tsx` to change.
-- [ ] **Project screenshots** for each project card / case study →
-      `public/projects/<slug>.png` (akiuae, esthica, beatryx, flavor-and-figures).
+- [x] **Project screenshots** — akiuae.jpg and esthica.jpg captured from the
+      live sites, optimized, and wired into both the project card and case
+      study page. Beatryx and Flavor & Figures still need a screenshot, but
+      have no public URL yet to capture from (see below).
 - [x] **OG social share image** (1200×630) generated at `public/og/og-image.jpg`
       — branded card with real headshot, name, role, and tagline. Replace with
       a designed version anytime; it's referenced from `index.html` and
@@ -17,18 +19,21 @@ Most content is now verified from the official CV
 - [ ] Favicon set / brand mark (SVG placeholder currently in use).
 
 ## Content to confirm
-- [ ] **Live URLs** for Beatryx and Flavor & Figures (cards currently omit the
-      live button — add to `src/data/projects.ts` when available).
+- [ ] **Live URLs** for Beatryx and Flavor & Figures — cards currently omit
+      the live button, and no screenshot can be captured until these are
+      public. Add to `src/data/projects.ts` when available.
 - [ ] **Certification details** — issuer + year for Android Developer,
       Flutter Developer, Digital Marketing & SEO (`src/data/certifications.ts`).
 - [x] Testimonials — 3 real client quotes added (Esthica, AK International,
       Flavor & Figures). Optional: client logos/avatars →
       `public/testimonials/<name>.jpg`.
-- [ ] Case study depth (problem/solution/challenges/results) per project (Phase 9).
+- [x] Case study depth (problem/solution/challenges/results) per project — live
+      at `/projects/<slug>` for all 5 projects.
 
 ## Infra
-- [ ] Final deploy domain → update `SITE.url` in `src/data/site.ts`
-      (placeholder: `https://anwaralam.dev`), plus `robots.txt` + `sitemap.xml`.
+- [x] Deployed to `https://iamanwaralam.github.io` via GitHub Actions
+      (auto-deploys on push to `main`). Domain updated everywhere: `SITE.url`,
+      `index.html`, `robots.txt`, `sitemap.xml`.
 
 ## Verified & wired from the CV (no action needed)
 - [x] 8+ years experience (4 in the UAE); full work history with real dates:

@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
     category: 'Web',
     liveUrl: 'https://akiuae.com',
     featured: true,
-    // image: '/projects/akiuae.png', // TODO: add screenshot
+    image: '/projects/akiuae.jpg',
   },
   {
     slug: 'esthica',
@@ -27,6 +27,7 @@ export const PROJECTS: Project[] = [
     category: 'E-commerce',
     liveUrl: 'https://esthica.com',
     featured: true,
+    image: '/projects/esthica.jpg',
   },
   {
     slug: 'beatryx',
