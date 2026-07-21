@@ -1,8 +1,6 @@
 /**
  * Global site identity + SEO defaults. Single source of truth used by the SEO
  * component, structured data, and the footer.
- *
- * TODO(deploy): confirm final domain and update `url` (see docs/TODO.md).
  */
 export const SITE = {
   name: 'Anwar Alam',
@@ -15,7 +13,7 @@ export const SITE = {
   ogImage: '/og/og-image.jpg',
   locale: 'en_US',
   location: 'Dubai, UAE',
-  twitterHandle: '@anwar_alam4U',
+  twitterHandle: '@iamanwaralam',
   email: 'iamanwaralam48@gmail.com',
   phone: '+971586619341',
   phoneDisplay: '+971 58 661 9341',

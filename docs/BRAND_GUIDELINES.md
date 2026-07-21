@@ -23,7 +23,7 @@
 | GitHub | https://github.com/iamanwaralam | verified |
 | LinkedIn | https://www.linkedin.com/in/iamanwaralam/ | verified |
 | Instagram | https://www.instagram.com/anwaralam4u/ | verified |
-| Twitter / X | https://twitter.com/anwar_alam4U | verified |
+| Twitter / X | https://x.com/iamanwaralam | verified |
 
 ## 3. Voice & tone
 

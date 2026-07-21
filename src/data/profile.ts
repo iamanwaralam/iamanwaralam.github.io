@@ -48,7 +48,7 @@ export const SOCIALS: SocialLink[] = [
     href: 'https://www.instagram.com/anwaralam4u/',
     icon: 'instagram',
   },
-  { label: 'X (Twitter)', href: 'https://twitter.com/anwar_alam4U', icon: 'twitter' },
+  { label: 'X (Twitter)', href: 'https://x.com/iamanwaralam', icon: 'twitter' },
   {
     label: 'WhatsApp',
     href: 'https://wa.me/971586619341',
