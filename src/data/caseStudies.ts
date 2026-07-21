@@ -49,25 +49,27 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: 'esthica',
     tagline:
-      'A custom Shopify OS 2.0 storefront for a UAE beauty brand, built for catalog depth and conversion.',
+      'A full Shopify store built from scratch for a UAE beauty brand — theme, catalog, payments, and the marketing behind it.',
     overview:
-      'Esthica, a UAE beauty store, needed a distinctive storefront on Shopify OS 2.0 with its full catalog cleanly integrated and a shopping experience tuned for conversion.',
+      'Esthica, a UAE beauty brand, needed a complete e-commerce presence built from the ground up — not just a storefront, but the catalog, payments, and ongoing marketing behind it. I owned the project end-to-end: store build, product uploads, payment integration, and the marketing and social media that drive traffic to it.',
     problem: [
-      'Off-the-shelf themes didn’t match the brand or handle the catalog structure well.',
-      'The store needed a flexible, maintainable theme the team could keep running.',
+      'No existing online store — the brand needed a complete Shopify presence built from scratch.',
+      'The full product catalog needed to be uploaded and organised for a beauty retail experience.',
+      'Payments, marketing, and social media all needed one owner to keep the brand consistent.',
     ],
     solution: [
-      'Designed and shipped a custom Shopify OS 2.0 theme with full catalog integration.',
-      'Built flexible sections so the team can merchandise without developer help.',
-      'Focused the layout and product presentation on a smooth path to checkout.',
+      'Built the Esthica Shopify store from scratch, including a custom OS 2.0 theme suited to the beauty category.',
+      'Uploaded and organised the full product catalog for a smooth shopping experience.',
+      'Integrated payment gateways for a reliable, secure checkout.',
+      'Run ongoing marketing and manage social media for the product range to drive traffic and sales.',
     ],
     challenges: [
-      'Mapping a real-world beauty catalog into Shopify’s data model cleanly.',
-      'Balancing bespoke design with Shopify OS 2.0’s section-based flexibility.',
+      'Structuring a beauty retail catalog for easy browsing and search.',
+      'Owning store development, payments, and marketing together as a single point of accountability.',
     ],
     results: [
-      'A distinctive, on-brand storefront live at esthica.com.',
-      'A maintainable OS 2.0 theme the team can extend over time.',
+      'A complete, live Shopify store at esthica.com covering the full customer journey from discovery to checkout.',
+      'A consistent brand presence across the store and social media, backed by ongoing marketing work.',
     ],
   },
   {

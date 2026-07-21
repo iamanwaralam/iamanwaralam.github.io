@@ -22,8 +22,8 @@ export const PROJECTS: Project[] = [
     slug: 'esthica',
     title: 'Esthica — Shopify Store',
     description:
-      'Designed and shipped a custom Shopify OS 2.0 theme for Esthica, a UAE beauty brand, with full catalog integration and a conversion-focused storefront.',
-    tech: ['Shopify OS 2.0', 'Liquid', 'E-commerce'],
+      'Built the Esthica Shopify store from scratch for a UAE beauty brand — theme design, full product catalog upload, payment gateway integration, and ongoing marketing and social media management for the full product range.',
+    tech: ['Shopify OS 2.0', 'Payment Integration', 'Marketing'],
     category: 'E-commerce',
     liveUrl: 'https://esthica.com',
     featured: true,

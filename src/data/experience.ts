@@ -26,12 +26,13 @@ export const EXPERIENCE: ExperienceItem[] = [
     location: 'Dubai, UAE',
     period: '2023 — Present',
     responsibilities: [
-      'Designed and shipped a custom Shopify OS 2.0 theme for Esthica.com (UAE beauty store) with full catalog integration.',
+      'Built the Esthica.com Shopify store from scratch for a UAE beauty brand — custom OS 2.0 theme, full product catalog upload, and payment gateway integration.',
+      'Own ongoing marketing and social media management for Esthica’s full product range, driving traffic and sales.',
       'Built a Next.js headless storefront for Beatryx with checkout integrated into the Esthica Shopify backend.',
       'Developed a Next.js content platform for Flavor & Figures, a Dubai food media channel.',
       'Integrated MCP connectors (GitHub, Figma, Vercel) into an AI-assisted development workflow.',
     ],
-    stack: ['Shopify OS 2.0', 'Next.js', 'Liquid', 'Headless', 'MCP'],
+    stack: ['Shopify OS 2.0', 'Next.js', 'Payment Integration', 'Marketing', 'MCP'],
   },
   {
     company: 'ArhamTechMind',
