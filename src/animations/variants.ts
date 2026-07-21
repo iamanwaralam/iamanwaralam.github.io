@@ -43,18 +43,3 @@ export const staggerContainer = (stagger = 0.06, delayChildren = 0): Variants =>
     transition: { staggerChildren: stagger, delayChildren },
   },
 });
-
-/** Page transition wrapper for route changes. */
-export const pageTransition: Variants = {
-  initial: { opacity: 0, y: 8 },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: DURATION.fast, ease: EASE_PREMIUM },
-  },
-  exit: {
-    opacity: 0,
-    y: -8,
-    transition: { duration: 0.2, ease: EASE_PREMIUM },
-  },
-};

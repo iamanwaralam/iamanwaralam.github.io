@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { SearchX } from 'lucide-react';
 import { Section, SectionHeader } from '@/components/common';
 import { PROJECTS } from '@/data/projects';
@@ -11,8 +11,12 @@ const ALL = 'All';
 
 /**
  * Projects — filterable, searchable grid of real client and personal work.
- * Category chips + a text query narrow the list; the grid animates between
- * states with layout transitions.
+ * Category chips + a text query narrow the list; the grid re-staggers in on
+ * every filter change (keyed remount, not AnimatePresence) — nesting
+ * AnimatePresence here would compete with the outer page-transition
+ * AnimatePresence in AppRoutes when this whole section unmounts on
+ * navigation, leaving the exit stuck and the destination page never
+ * rendering until a hard refresh.
  */
 export function Projects() {
   const [category, setCategory] = useState(ALL);
@@ -62,17 +66,15 @@ export function Projects() {
 
       {filtered.length > 0 ? (
         <motion.div
-          layout
+          key={`${category}-${query}`}
           variants={staggerContainer(0.06)}
           initial="hidden"
           animate="visible"
           className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
         >
-          <AnimatePresence mode="popLayout">
-            {filtered.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
-          </AnimatePresence>
+          {filtered.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
         </motion.div>
       ) : (
         <div className="mt-16 flex flex-col items-center gap-3 text-center">

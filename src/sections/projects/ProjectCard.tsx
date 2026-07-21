@@ -15,7 +15,7 @@ import type { Project } from '@/data/types';
 export function ProjectCard({ project }: { project: Project }) {
   const caseStudy = hasCaseStudy(project.slug);
   return (
-    <motion.div variants={fadeUp} layout className="h-full">
+    <motion.div variants={fadeUp} className="h-full">
       <Card interactive className="group flex h-full flex-col overflow-hidden">
         {/* Cover */}
         <div className="relative aspect-[16/10] overflow-hidden border-b border-border">
