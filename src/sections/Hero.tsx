@@ -110,7 +110,7 @@ export function Hero() {
             variants={fadeUp}
             className="mt-10 grid w-full max-w-md grid-cols-3 gap-4 border-t border-border pt-6"
           >
-            {STATS.slice(0, 3).map((stat) => (
+            {STATS.map((stat) => (
               <div key={stat.label} className="text-center lg:text-left">
                 <dt className="sr-only">{stat.label}</dt>
                 <dd>

@@ -28,11 +28,10 @@ export const PROFILE = {
   bio: 'Full-stack developer with 8+ years across web and mobile, including 4 years in the UAE. I rebuild corporate sites as modern Next.js applications, ship custom Shopify OS 2.0 themes and headless storefronts, and drive the SEO and infrastructure work that keeps them fast and discoverable. Former Android/Flutter developer with published Google Play apps, and an early adopter of AI-assisted engineering with Claude Code and MCP.',
 } as const;
 
-/** Headline stats — grounded in the CV. */
+/** Headline stats — grounded in the CV, kept universally readable (no jargon). */
 export const STATS: Stat[] = [
   { value: '8+', label: 'Years of Experience' },
   { value: '4', label: 'Years in the UAE' },
-  { value: '32', label: 'Static Routes Shipped' },
   { value: '100%', label: 'Zero-Downtime Migration' },
 ];
 
