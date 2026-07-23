@@ -8,6 +8,7 @@ export { LoadingScreen } from './LoadingScreen';
 export { Skeleton } from './Skeleton';
 export { RouteSkeleton } from './RouteSkeleton';
 export { AnimatedCursor } from './AnimatedCursor';
+export { VisitCounter } from './VisitCounter';
 export { ScrollProgress } from './ScrollProgress';
 export { SocialLinks } from './SocialLinks';
 export { SectionHeader } from './SectionHeader';

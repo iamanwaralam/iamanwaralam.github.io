@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowUp, Heart } from 'lucide-react';
-import { Container, Reveal, SocialLinks } from '@/components/common';
+import { Container, Reveal, SocialLinks, VisitCounter } from '@/components/common';
 import { Button } from '@/components/ui/button';
 import { PROFILE } from '@/data/profile';
 import { SERVICES } from '@/data/services';
@@ -133,6 +133,7 @@ export function Footer() {
           <p className="text-xs text-muted-foreground">
             © {year} {PROFILE.name}. All rights reserved.
           </p>
+          <VisitCounter />
           <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
             Built with
             <Heart
