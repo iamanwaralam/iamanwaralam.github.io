@@ -26,6 +26,38 @@ const BLOCKS = [
 ] as const;
 
 /**
+ * Renders overview text with its first exact mention of `keyword` turned into
+ * a backlink to `href`. No-ops if the keyword isn't present verbatim.
+ */
+function LinkedOverview({
+  text,
+  keyword,
+  href,
+}: {
+  text: string;
+  keyword: string;
+  href: string;
+}) {
+  const index = text.indexOf(keyword);
+  if (index === -1) return <>{text}</>;
+
+  return (
+    <>
+      {text.slice(0, index)}
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-medium text-foreground underline decoration-primary/40 underline-offset-4 hover:text-primary"
+      >
+        {keyword}
+      </a>
+      {text.slice(index + keyword.length)}
+    </>
+  );
+}
+
+/**
  * Dedicated case-study page for a single project. Real, CV-grounded content
  * with its own SEO + structured data. Unknown slugs redirect to home.
  */
@@ -157,7 +189,15 @@ export function CaseStudyPage() {
               Overview
             </h2>
             <p className="mt-3 text-pretty text-lg leading-relaxed text-muted-foreground">
-              {study.overview}
+              {project.liveUrl ? (
+                <LinkedOverview
+                  text={study.overview}
+                  keyword={project.title}
+                  href={project.liveUrl}
+                />
+              ) : (
+                study.overview
+              )}
             </p>
           </div>
         </Container>
