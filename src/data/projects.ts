@@ -112,10 +112,10 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: 'techsavvyhelp',
-    title: 'TechSavvyHelp',
+    title: 'TechSavvyHelp — Windows troubleshooting & online safety guides',
     description:
-      'Independent project: built, write for, and run TechSavvyHelp, a WordPress site publishing Windows tips, fixes, and step-by-step troubleshooting guides — owning keyword research, on-page SEO, and content end-to-end across security, software, and mobile topics.',
-    tech: ['WordPress', 'Elementor', 'SEO', 'Content Writing'],
+      'I founded and run TechSavvyHelp, a WordPress and Elementor site publishing step-by-step fixes for Windows 11 problems, monthly Windows Update known-issue coverage, and practical guides to spotting online scams, including UAE-specific ones.',
+    tech: ['WordPress', 'Elementor', 'SEO', 'Content Strategy', 'PHP'],
     category: 'Web',
     liveUrl: 'https://techsavvyhelp.com',
     image: '/projects/techsavvyhelp.jpg',

@@ -270,9 +270,9 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: 'techsavvyhelp',
     tagline:
-      'An independent project — built, written, and optimised end-to-end by Anwar, including keyword research and SEO.',
+      'Practical Windows troubleshooting and online safety guides, founded and run by Anwar.',
     overview:
-      'TechSavvyHelp is an independent project: a fast, well-organised WordPress site publishing practical Windows troubleshooting guides, how-tos, and tech insights. Anwar owns it end-to-end — building the site, tuning it for speed and Core Web Vitals, and researching, writing, and optimising every guide.',
+      'I founded and run TechSavvyHelp, a WordPress and Elementor site that publishes step-by-step fixes for Windows 11 problems, monthly Windows Update known-issue coverage, and practical guides to spotting online scams, including UAE-specific ones.',
     problem: [
       'A slow WordPress setup hurts both readers and search rankings — page speed and Core Web Vitals needed to be genuinely fast, not just adequate.',
       'Readers need clear, practical troubleshooting guides organised by topic.',
@@ -280,8 +280,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     solution: [
       'Built the site on WordPress with Elementor, organised into Windows, How To, Security, Software, Mobile, and Troubleshooter sections.',
-      'Optimised the WordPress stack for speed and Core Web Vitals — image compression, caching, and a lean Elementor setup.',
-      'Research keywords and search intent for each topic, then write and publish guides optimised around them for on-page SEO.',
+      'Own content strategy, SEO, site design and development using WordPress, Elementor, and custom PHP, plus performance and caching.',
+      'Developed topic clusters and pillar guides, a custom related-guides system, and a monthly Patch Tuesday update workflow.',
     ],
     challenges: [
       'Keeping Core Web Vitals strong on WordPress + Elementor, a stack that easily gets slow without careful optimisation.',

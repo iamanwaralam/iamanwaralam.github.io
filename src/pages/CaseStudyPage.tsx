@@ -192,7 +192,7 @@ export function CaseStudyPage() {
               {project.liveUrl ? (
                 <LinkedOverview
                   text={study.overview}
-                  keyword={project.title}
+                  keyword={project.title.split(' — ')[0]}
                   href={project.liveUrl}
                 />
               ) : (
