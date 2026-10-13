@@ -11,7 +11,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 
 /**
  * Skills grouped by category — verified against Anwar's official CV
- * (public/resume/Anwar_Alam_CV.pdf).
+ * (public/resume/Anwar_Alam_Full_Stack_Web_Developer_Dubai_CV.pdf).
  */
 export const SKILLS: Skill[] = [
   // Web Development

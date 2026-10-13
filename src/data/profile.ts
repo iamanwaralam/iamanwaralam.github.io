@@ -6,7 +6,7 @@ const WEB_PROJECT_COUNT = PROJECTS.filter((p) => p.category !== 'Mobile').length
 
 /**
  * Core personal brand. Verified against Anwar's official one-page CV
- * (public/resume/Anwar_Alam_CV.pdf) — the authoritative source for
+ * (public/resume/Anwar_Alam_Full_Stack_Web_Developer_Dubai_CV.pdf) — the authoritative source for
  * roles, experience, and bio.
  */
 export const PROFILE = {

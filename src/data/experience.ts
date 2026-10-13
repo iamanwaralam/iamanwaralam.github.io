@@ -2,7 +2,7 @@ import type { ExperienceItem } from './types';
 
 /**
  * Work experience — verified from Anwar's official CV
- * (public/resume/Anwar_Alam_CV.pdf). Real roles, dates, and
+ * (public/resume/Anwar_Alam_Full_Stack_Web_Developer_Dubai_CV.pdf). Real roles, dates, and
  * responsibilities. No placeholders.
  */
 export const EXPERIENCE: ExperienceItem[] = [

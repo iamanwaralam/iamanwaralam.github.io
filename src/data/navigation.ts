@@ -16,4 +16,4 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 /** Path to the resume PDF (Anwar's one-page CV). */
-export const RESUME_URL = '/resume/Anwar_Alam_CV.pdf';
+export const RESUME_URL = '/resume/Anwar_Alam_Full_Stack_Web_Developer_Dubai_CV.pdf';

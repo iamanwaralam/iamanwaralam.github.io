@@ -1,7 +1,7 @@
 # TODO — Content & Assets Needed From Anwar
 
 Most content is now verified from the official CV
-(`public/resume/Anwar_Alam_CV.pdf`). Remaining items below.
+(`public/resume/Anwar_Alam_Full_Stack_Web_Developer_Dubai_CV.pdf`). Remaining items below.
 
 ## Assets
 - [x] **Hero photo** — removed by request; the hero is now a text-only,

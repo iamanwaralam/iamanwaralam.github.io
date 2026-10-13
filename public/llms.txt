@@ -8,7 +8,7 @@ Anwar Alam rebuilds corporate and product sites as fast, modern Next.js applicat
 
 - [Home](https://iamanwaralam.github.io/): Full portfolio — about, skills, services, experience, testimonials, contact
 - [Projects](https://iamanwaralam.github.io/#projects): Filterable, searchable grid of all case studies
-- [Resume (PDF)](https://iamanwaralam.github.io/resume/Anwar_Alam_CV.pdf): One-page CV
+- [Resume (PDF)](https://iamanwaralam.github.io/resume/Anwar_Alam_Full_Stack_Web_Developer_Dubai_CV.pdf): One-page CV
 - [Contact](https://iamanwaralam.github.io/#contact): Contact form, email, WhatsApp, LinkedIn, GitHub
 
 ## Case Studies

@@ -1,6 +1,6 @@
 /**
  * About-section content. Verified against Anwar's official CV
- * (public/resume/Anwar_Alam_CV.pdf). Education, languages, and
+ * (public/resume/Anwar_Alam_Full_Stack_Web_Developer_Dubai_CV.pdf). Education, languages, and
  * highlights are now real — no placeholders.
  */
 

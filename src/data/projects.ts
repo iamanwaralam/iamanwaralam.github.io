@@ -1,7 +1,7 @@
 import type { Project } from './types';
 
 /**
- * Projects — verified from Anwar's CV (public/resume/Anwar_Alam_CV.pdf)
+ * Projects — verified from Anwar's CV (public/resume/Anwar_Alam_Full_Stack_Web_Developer_Dubai_CV.pdf)
  * and the live links on https://iamanwaralam.github.io. Descriptions are
  * recruiter-focused and factual. Missing live URLs / screenshots are TODOs
  * (see docs/TODO.md) — cards simply omit links that aren't available yet.
