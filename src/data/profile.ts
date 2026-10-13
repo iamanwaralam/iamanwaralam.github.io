@@ -1,8 +1,4 @@
-import { PROJECTS } from './projects';
 import type { SocialLink, Stat } from './types';
-
-/** Web + e-commerce projects (excludes standalone mobile-app work). */
-const WEB_PROJECT_COUNT = PROJECTS.filter((p) => p.category !== 'Mobile').length;
 
 /**
  * Core personal brand. Verified against Anwar's official one-page CV
@@ -40,7 +36,7 @@ export const PROFILE = {
 
 /** Headline stats — grounded in the CV. No exact-duration figures. */
 export const STATS: Stat[] = [
-  { value: `${WEB_PROJECT_COUNT}`, label: 'Web Projects Shipped' },
+  { value: '50+', label: 'Web Projects Shipped' },
   { value: '100%', label: 'Zero-Downtime Migration' },
   { value: 'UAE', label: 'Dubai-Based Developer' },
 ];
