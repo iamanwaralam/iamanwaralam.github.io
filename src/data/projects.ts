@@ -8,6 +8,26 @@ import type { Project } from './types';
  */
 export const PROJECTS: Project[] = [
   {
+    slug: 'netlock',
+    title: 'NetLock — Per-App Internet Firewall',
+    description:
+      'Designed and built NetLock, a per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase — one switch per app, native firewall engines per platform, no root, no data collected. Linux version publicly released.',
+    tech: [
+      'Kotlin Multiplatform',
+      'Compose Multiplatform',
+      'Android',
+      'Linux',
+      'Windows',
+      'Swift',
+      'GitHub Actions',
+    ],
+    category: 'Mobile',
+    liveUrl: 'https://github.com/iamanwaralam/netlock-releases',
+    download: true,
+    featured: true,
+    image: '/projects/netlock.jpg',
+  },
+  {
     slug: 'akiuae',
     title: 'AKIUAE Corporate Website',
     description:

@@ -20,6 +20,39 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    slug: 'netlock',
+    tagline:
+      'One Kotlin codebase, three operating systems, three native firewall engines — a privacy-first app that decides which of your apps may use the internet.',
+    overview:
+      'NetLock is a per-app internet firewall I designed and built end to end: product, UI design, architecture, native engines, testing and release. Each app gets one switch, and blocked apps lose network access while everything else keeps working. It started as an Android app and became a Kotlin Multiplatform project that shares its data, logic and Compose UI across Android, Linux, Windows and macOS. Each platform blocks traffic with its own native mechanism. The Linux version is publicly released, and the app collects no data at all.',
+    problem: [
+      'Phones and computers have no simple, built-in way to stop one particular app from using the internet.',
+      'Android doesn’t allow per-app firewalls without root, except through its VPN API, which has strict Google Play policy rules.',
+      'Every desktop OS blocks traffic differently: Windows Firewall, Linux nftables and cgroups, and Apple’s Network Extensions. Each one needs elevated privileges, which makes security essential.',
+      'It had to be fully private: no accounts, no analytics, no servers, and no inspection of anyone’s traffic.',
+    ],
+    solution: [
+      'Android: a local ‘black-hole’ VPN (VpnService) that routes only the blocked apps into the tunnel and drops their packets on the device. Nothing is forwarded or inspected. Built in Kotlin with Jetpack Compose, MVVM, Hilt, Room, DataStore and Coroutines/Flow.',
+      'Kotlin Multiplatform: moved models, domain logic, Room database, DataStore, ViewModels, navigation and every Compose screen into a shared module. Each platform only plugs in its own engine, app list and icons.',
+      'Linux: a root systemd service that matches each app’s systemd scope and adds nftables ‘socket cgroupv2’ drop rules. It installs with one pkexec password prompt, keeps blocking after a reboot, and only its owner can control it. Shipped as .deb, .rpm and Arch packages with clean install and uninstall scripts.',
+      'Windows: Windows Defender Firewall outbound rules, managed by an engine that runs as SYSTEM from a scheduled task and installs with one UAC prompt. It supports Microsoft Store apps (package SIDs) and ships as an MSI that upgrades and uninstalls cleanly. Folder ACLs restrict control to the user who set it up.',
+      'macOS: a Swift Network Extension content filter (system extension) plus a helper engine. Built and unit-tested, and waiting for Apple Developer signing.',
+      'The desktop app talks to each engine over a small JSON protocol on a local Unix socket that only the owner can open. The app itself never needs admin rights.',
+    ],
+    challenges: [
+      'Android’s VPN API: an empty allow-list would send every app into the tunnel and take the phone offline, and asking for VPN permission at the wrong moment disconnects the user’s other VPN. Both had to be handled carefully.',
+      'Testing firewalls automatically: I built GitHub Actions pipelines that run real-firewall integration tests on Windows, Ubuntu (as root) and an Arch container. curl must fail when blocked and work again when unblocked.',
+      'Security of privileged engines: making sure other users on the same computer can’t change the rules. This is verified on Windows CI with a temporary second user who is refused access to the engine.',
+      'Packaging for many distributions and installers, with upgrade and uninstall scripts that stop, restart and remove the engine and its firewall rules without leaving anything behind.',
+    ],
+    results: [
+      'NetLock for Linux 1.0.1 is publicly released as .deb, .rpm and Arch packages, and verified on real Kali Linux and Manjaro PCs.',
+      'The Windows version is tested on a real Windows 11 laptop: install, blocking, staying blocked after a reboot, upgrades and a clean uninstall. Android works on a real phone and is preparing for Google Play.',
+      'One shared codebase for UI and logic across platforms, backed by 100+ automated tests and CI on Windows, Ubuntu and Arch.',
+      'Privacy by design: no accounts, analytics, ads or network requests of its own, and a published privacy policy.',
+    ],
+  },
+  {
     slug: 'akiuae',
     tagline:
       'Rebuilding a Dubai distributor’s corporate presence on Next.js 14 — and moving it to a cloud hosting platform without a second of downtime.',

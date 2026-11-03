@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, ExternalLink, Github, Star } from 'lucide-react';
+import { ArrowUpRight, Download, ExternalLink, Github, Star } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { fadeUp } from '@/animations/variants';
@@ -79,8 +79,12 @@ export function ProjectCard({ project }: { project: Project }) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground transition-colors hover:text-primary-text"
                 >
-                  <ExternalLink className="size-4" />
-                  Live demo
+                  {project.download ? (
+                    <Download className="size-4" />
+                  ) : (
+                    <ExternalLink className="size-4" />
+                  )}
+                  {project.download ? 'Download' : 'Live demo'}
                 </a>
               )}
               {project.githubUrl && (

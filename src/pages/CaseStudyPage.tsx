@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   ArrowUpRight,
+  Download,
   ExternalLink,
   Github,
   Lightbulb,
@@ -135,8 +136,8 @@ export function CaseStudyPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Visit live site
-                        <ExternalLink />
+                        {project.download ? 'Download' : 'Visit live site'}
+                        {project.download ? <Download /> : <ExternalLink />}
                       </a>
                     </Button>
                   )}

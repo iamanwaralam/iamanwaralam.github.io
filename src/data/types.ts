@@ -46,6 +46,8 @@ export interface Project {
   tech: string[];
   category: ProjectCategory;
   liveUrl?: string;
+  /** liveUrl points to a downloads page, so links read "Download" instead. */
+  download?: boolean;
   githubUrl?: string;
   /** Path under /public; falls back to a generated cover if absent. */
   image?: string;
