@@ -30,9 +30,6 @@ Version: 1.0
     .text-affect, .typed-cursor {
         font-size: 4.5em;
     }
-    .mouse-icon {
-        bottom: -320px;
-    }
     .banner-area {
         height: 600px;
     }
@@ -119,9 +116,6 @@ Version: 1.0
     }
     .sticky_navigation .nav li a {
         color: #ffffff;
-    }
-    .mouse-icon {
-        bottom: -125px;
     }
     .navbar-nav {
         text-align: center;
@@ -235,9 +229,6 @@ Version: 1.0
     .navbar-toggle .icon-bar {
         background: #28a745;
     }
-    .mouse-icon {
-        bottom: -300px;
-    }
     .contact-area {
         background-position: inherit;
     }
@@ -278,5 +269,3 @@ Version: 1.0
         text-align: center;
     }
 }
-
-

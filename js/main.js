@@ -26,15 +26,15 @@ $(document).ready(function () {
         }
     });
     
-    $(document).on('click', '.navbar-collapse.in', function (e) {
+    $(document).on('click', '.navbar-collapse.show', function (e) {
         if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
             $(this).collapse('hide');
         }
     });
     
-    $('body').scrollspy({
-        target: '.navbar-collapse',
-        offset: 195
+    // Bootstrap 5 ScrollSpy
+    new bootstrap.ScrollSpy(document.body, {
+        target: '.navbar-collapse'
     });
     
     $('a.smooth-menu').on("click", function (e) {
