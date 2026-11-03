@@ -8,10 +8,10 @@ import type { Project } from './types';
  */
 export const PROJECTS: Project[] = [
   {
-    slug: 'netlock',
-    title: 'NetLock — Per-App Internet Firewall',
+    slug: 'netcurb',
+    title: 'Netcurb — Per-App Internet Firewall',
     description:
-      'Designed and built NetLock, a per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase — one switch per app, native firewall engines per platform, no root, no data collected. Linux version publicly released.',
+      'Designed and built Netcurb, a per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase — one switch per app, native firewall engines per platform, no root, no data collected. Linux version publicly released.',
     tech: [
       'Kotlin Multiplatform',
       'Compose Multiplatform',
@@ -22,10 +22,10 @@ export const PROJECTS: Project[] = [
       'GitHub Actions',
     ],
     category: 'Mobile',
-    liveUrl: 'https://github.com/iamanwaralam/netlock-releases',
+    liveUrl: 'https://github.com/iamanwaralam/netcurb-releases',
     download: true,
     featured: true,
-    image: '/projects/netlock.jpg',
+    image: '/projects/netcurb.jpg',
   },
   {
     slug: 'akiuae',

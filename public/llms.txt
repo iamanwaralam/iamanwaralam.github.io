@@ -13,7 +13,7 @@ Anwar Alam rebuilds corporate and product sites as fast, modern Next.js applicat
 
 ## Case Studies
 
-- [NetLock — Per-App Internet Firewall](https://iamanwaralam.github.io/projects/netlock): Designed and built a privacy-first per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase, with native firewall engines per platform (VpnService, nftables/cgroups, Windows Firewall). Linux version publicly released.
+- [Netcurb — Per-App Internet Firewall](https://iamanwaralam.github.io/projects/netcurb): Designed and built a privacy-first per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase, with native firewall engines per platform (VpnService, nftables/cgroups, Windows Firewall). Linux version publicly released.
 - [AKIUAE Corporate Website](https://iamanwaralam.github.io/projects/akiuae): Rebuilt a Dubai distributor's corporate site as a Next.js 14 application with 32 statically generated routes, then led a zero-downtime DNS & hosting migration from GoDaddy to a cloud hosting platform.
 - [Esthica — Shopify Store](https://iamanwaralam.github.io/projects/esthica): Built and manages the Esthica Shopify store for AK International — theme, catalog, payment integration, and ongoing marketing/social media management.
 - [Beatryx — Headless Storefront](https://iamanwaralam.github.io/projects/beatryx): Next.js headless storefront built as part of AK International's work, with checkout integrated directly into the Esthica Shopify backend.

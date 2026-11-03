@@ -20,11 +20,11 @@ export interface CaseStudy {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
-    slug: 'netlock',
+    slug: 'netcurb',
     tagline:
       'One Kotlin codebase, three operating systems, three native firewall engines — a privacy-first app that decides which of your apps may use the internet.',
     overview:
-      'NetLock is a per-app internet firewall I designed and built end to end: product, UI design, architecture, native engines, testing and release. Each app gets one switch, and blocked apps lose network access while everything else keeps working. It started as an Android app and became a Kotlin Multiplatform project that shares its data, logic and Compose UI across Android, Linux, Windows and macOS. Each platform blocks traffic with its own native mechanism. The Linux version is publicly released, and the app collects no data at all.',
+      'Netcurb is a per-app internet firewall I designed and built end to end: product, UI design, architecture, native engines, testing and release. Each app gets one switch, and blocked apps lose network access while everything else keeps working. It started as an Android app and became a Kotlin Multiplatform project that shares its data, logic and Compose UI across Android, Linux, Windows and macOS. Each platform blocks traffic with its own native mechanism. The Linux version is publicly released, and the app collects no data at all.',
     problem: [
       'Phones and computers have no simple, built-in way to stop one particular app from using the internet.',
       'Android doesn’t allow per-app firewalls without root, except through its VPN API, which has strict Google Play policy rules.',
@@ -46,7 +46,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Packaging for many distributions and installers, with upgrade and uninstall scripts that stop, restart and remove the engine and its firewall rules without leaving anything behind.',
     ],
     results: [
-      'NetLock for Linux 1.0.1 is publicly released as .deb, .rpm and Arch packages, and verified on real Kali Linux and Manjaro PCs.',
+      'Netcurb for Linux 1.1.0 is publicly released as .deb, .rpm and Arch packages, and verified on real Kali Linux and Manjaro PCs.',
       'The Windows version is tested on a real Windows 11 laptop: install, blocking, staying blocked after a reboot, upgrades and a clean uninstall. Android works on a real phone and is preparing for Google Play.',
       'One shared codebase for UI and logic across platforms, backed by 100+ automated tests and CI on Windows, Ubuntu and Arch.',
       'Privacy by design: no accounts, analytics, ads or network requests of its own, and a published privacy policy.',
