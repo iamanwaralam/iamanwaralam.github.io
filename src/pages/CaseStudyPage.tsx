@@ -26,6 +26,23 @@ const BLOCKS = [
   { key: 'results', title: 'Results', icon: Rocket },
 ] as const;
 
+/** Renders `**bold**` runs in overview text as <strong>. */
+function Emphasis({ text }: { text: string }) {
+  return (
+    <>
+      {text.split(/\*\*(.+?)\*\*/).map((part, i) =>
+        i % 2 ? (
+          <strong key={i} className="font-semibold text-foreground">
+            {part}
+          </strong>
+        ) : (
+          part
+        ),
+      )}
+    </>
+  );
+}
+
 /**
  * Renders overview text with its first exact mention of `keyword` turned into
  * a backlink to `href`. No-ops if the keyword isn't present verbatim.
@@ -40,11 +57,11 @@ function LinkedOverview({
   href: string;
 }) {
   const index = text.indexOf(keyword);
-  if (index === -1) return <>{text}</>;
+  if (index === -1) return <Emphasis text={text} />;
 
   return (
     <>
-      {text.slice(0, index)}
+      <Emphasis text={text.slice(0, index)} />
       <a
         href={href}
         target="_blank"
@@ -53,7 +70,7 @@ function LinkedOverview({
       >
         {keyword}
       </a>
-      {text.slice(index + keyword.length)}
+      <Emphasis text={text.slice(index + keyword.length)} />
     </>
   );
 }
@@ -189,17 +206,22 @@ export function CaseStudyPage() {
             <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-primary-text">
               Overview
             </h2>
-            <p className="mt-3 text-pretty text-lg leading-relaxed text-muted-foreground">
-              {project.liveUrl ? (
-                <LinkedOverview
-                  text={study.overview}
-                  keyword={project.title.split(' — ')[0]}
-                  href={project.liveUrl}
-                />
-              ) : (
-                study.overview
-              )}
-            </p>
+            {/* Paragraphs are separated by blank lines; only the first gets the backlink. */}
+            <div className="mt-3 space-y-4 text-pretty text-lg leading-relaxed text-muted-foreground">
+              {study.overview.split('\n\n').map((paragraph, i) => (
+                <p key={i}>
+                  {i === 0 && project.liveUrl ? (
+                    <LinkedOverview
+                      text={paragraph}
+                      keyword={project.title.split(' — ')[0]}
+                      href={project.liveUrl}
+                    />
+                  ) : (
+                    <Emphasis text={paragraph} />
+                  )}
+                </p>
+              ))}
+            </div>
           </div>
         </Container>
 

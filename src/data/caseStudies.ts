@@ -23,8 +23,14 @@ export const CASE_STUDIES: CaseStudy[] = [
     slug: 'netcurb',
     tagline:
       'One Kotlin codebase, three operating systems, three native firewall engines — a privacy-first app that decides which of your apps may use the internet.',
-    overview:
-      'Netcurb is a per-app internet firewall I designed and built end to end: product, UI design, architecture, native engines, testing and release. Each app gets one switch, and blocked apps lose network access while everything else keeps working. It started as an Android app and became a Kotlin Multiplatform project that shares its data, logic and Compose UI across Android, Linux, Windows and macOS. Each platform blocks traffic with its own native mechanism. The Linux version is publicly released, and the app collects no data at all.',
+    overview: [
+      'Netcurb is a per-app internet firewall I designed and built end to end: product, UI design, architecture, native engines, testing and release. Each app gets one switch: blocked apps lose network access while everything else keeps working, and the app collects no data at all.',
+      'It started as an Android app and grew into a Kotlin Multiplatform project that shares its data, logic and Compose UI across every platform. Each platform blocks traffic with its own native mechanism.',
+      '**Linux** — publicly released (version 1.1.0). A background systemd service adds nftables rules for each blocked app, and blocking keeps working after a reboot. Ships as .deb, .rpm and Arch packages.',
+      '**Android** — a local VPN routes only the blocked apps into a tunnel and drops their traffic on the device. Working on a real phone and preparing for Google Play.',
+      '**Windows** — Windows Defender Firewall rules, managed by a background engine that installs with a single UAC prompt. Tested on a real Windows 11 laptop.',
+      '**macOS** — a Swift Network Extension content filter. Built and unit-tested, and waiting for Apple Developer signing.',
+    ].join('\n\n'),
     problem: [
       'Phones and computers have no simple, built-in way to stop one particular app from using the internet.',
       'Android doesn’t allow per-app firewalls without root, except through its VPN API, which has strict Google Play policy rules.',
