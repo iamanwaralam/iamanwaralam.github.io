@@ -90,6 +90,45 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
   },
   {
+    slug: 'dualfon',
+    tagline:
+      'One switch, three modes: an Android app that keeps the internet and blocks every call, or keeps calls and cuts the internet — without root, accounts or even an internet permission.',
+    overview: [
+      'Dualfon is an Android app I designed and built end to end: product, UI design, architecture, testing, store assets and the Google Play release. It gives a phone one switch with three modes.',
+      '**Data mode** keeps the internet on and blocks every call. Incoming calls are rejected before the phone rings, including calls from saved contacts, and outgoing calls are cancelled. Emergency numbers always go through.',
+      '**Calls mode** keeps phone calls and SMS working while the internet is off. The app opens Android’s internet panel and a live status card stays red until mobile data and Wi-Fi are really off.',
+      '**Both** is a normal phone. A Quick Settings tile switches modes without opening the app.',
+      'It is written natively in Kotlin with Jetpack Compose, in English and Arabic with full right-to-left layouts, light and dark themes. Version 1.0.0 is in closed testing on Google Play.',
+    ].join('\n\n'),
+    problem: [
+      'Android has no built-in way to say “internet yes, calls no” or the reverse. Airplane mode cuts both, and call blockers only block numbers, not every call.',
+      'Blocking had to be absolute: in Data mode no call may ring, not even from family. A missed setting or a race on a cold start would break the promise.',
+      'Android doesn’t let ordinary apps switch mobile data or Wi-Fi off, and Google Play restricts call-log, SMS and phone-control permissions.',
+      'It had to be fully private: no accounts, no servers, no analytics, and no access to anyone’s call log or messages.',
+    ],
+    solution: [
+      'Incoming calls: a CallScreeningService holding Android’s call screening role answers “reject” before the phone rings. The decision is read from memory, so respondToCall() runs in about a millisecond, far inside Android’s 5-second limit.',
+      'Outgoing calls: a CallRedirectionService holding the call redirecting role cancels dialled calls in Data mode. Emergency numbers are checked first with TelephonyManager.isEmergencyNumber, before the mode is even read.',
+      'A guarantee, not a best effort: Data mode only switches on when both roles and contacts access are granted. If any is lost later (for example another app takes over call screening), the app raises a red alert and a high-priority notification. If the mode can’t be read, it fails closed and blocks.',
+      'Works before the first unlock: the call services are direct-boot aware and the mode is mirrored to device-protected storage, so calls stay blocked right after a reboot.',
+      'Calls mode without a VPN: the app opens Android’s internet panel and a ConnectivityStatusMonitor checks mobile data, Wi-Fi, airplane mode, roaming and signal, with a one-tap fix for each problem.',
+      'Architecture: 16 Gradle modules (domain, data, telephony, UI, features, services) with convention plugins, MVVM, Hilt, Room, DataStore, WorkManager and Coroutines/Flow. No INTERNET, call-log or SMS permission at all.',
+    ],
+    challenges: [
+      'A notification that could silently disappear: holding the call screening role grants the notification permission automatically — and removing the role revokes it, exactly when the “Data mode is NOT blocking calls” alert must be shown. Found on the emulator and fixed by asking for notifications before the role, so the grant belongs to the user.',
+      'Calls ringing after a reboot: a normal app can’t run before the first unlock. Making the call services direct-boot aware and moving the mode into device-protected storage closed that gap.',
+      'Choosing simplicity over cleverness: the first build cut the internet with a local VPN. It worked, but it conflicted with users’ own VPNs and needed a Play VPN declaration, so Calls mode became a guided switch with a live status check.',
+      'Making a call blocker trustworthy on Play: minimal permissions, an in-app privacy policy, reviewer instructions for the call roles, and store screenshots generated from real screens of the release build.',
+    ],
+    results: [
+      'Dualfon 1.0.0 is in closed testing on Google Play.',
+      'Incoming calls rejected in 0–1 ms in testing, against a 150 ms target; outgoing calls cancelled and emergency numbers always allowed.',
+      '51 unit tests covering every mode change, the call policy, emergency-first and fail-closed rules, with lint, tests and the build running on GitHub Actions.',
+      'A 3.7 MB app (R8), in English and Arabic with full right-to-left support, light and dark themes, and WCAG AA colour contrast.',
+      'Privacy by design: no accounts, ads, analytics or internet permission, and a published privacy policy.',
+    ],
+  },
+  {
     slug: 'akiuae',
     tagline:
       'Rebuilding a Dubai distributor’s corporate presence on Next.js 14 — and moving it to a cloud hosting platform without a second of downtime.',

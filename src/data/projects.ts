@@ -44,10 +44,10 @@ export const PROJECTS: Project[] = [
     slug: 'dualfon',
     title: 'Dualfon — Data or Calls Only',
     description:
-      'Built Dualfon, an Android app that switches a phone between three modes with one tap: Data (internet on, calls blocked), Calls (calls on, internet off) and Both. No internet permission, no accounts, no analytics. In closed testing on Google Play.',
-    // TODO(anwar): confirm the full stack (e.g. Kotlin, Jetpack Compose).
-    tech: ['Android', 'Call Screening API', 'Privacy-first'],
+      'Designed and built Dualfon, an Android app that switches a phone between three modes with one tap: Data (internet on, every call blocked), Calls (calls on, internet off) and Both. Native Kotlin and Jetpack Compose across 16 modules, built on Android’s call screening and call redirection roles, with no internet permission and no data collected. In closed testing on Google Play.',
+    tech: ['Kotlin', 'Jetpack Compose', 'Android', 'Hilt', 'Room', 'Call Screening API', 'GitHub Actions'],
     category: 'Mobile',
+    featured: true,
     image: '/projects/dualfon.jpg',
   },
   {
