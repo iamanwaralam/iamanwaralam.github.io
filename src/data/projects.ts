@@ -24,7 +24,9 @@ export const PROJECTS: Project[] = [
     category: 'Mobile',
     stores: [
       { store: 'microsoft', href: 'https://apps.microsoft.com/detail/9NRSVQMXJ23W' },
-      { store: 'linux', href: 'https://github.com/iamanwaralam/netcurb-releases' },
+      // GitHub release pages: update the tags when a new version is released.
+      { store: 'windows', href: 'https://github.com/iamanwaralam/netcurb-releases/releases/tag/windows-v1.1.2' },
+      { store: 'linux', href: 'https://github.com/iamanwaralam/netcurb-releases/releases/tag/linux-v1.1.2' },
     ],
     featured: true,
     image: '/projects/netcurb.jpg',

@@ -8,7 +8,7 @@ Personal portfolio for Anwar Alam, a full-stack developer based in Dubai, UAE. A
 
 ## Featured projects
 
-- **[Netcurb](https://iamanwaralam.github.io/projects/netcurb)**: a per-app internet firewall for Android, Linux, Windows and macOS, built from one Kotlin Multiplatform codebase. Live on the [Microsoft Store](https://apps.microsoft.com/detail/9NRSVQMXJ23W), released for Linux (.deb, .rpm, Arch) and in closed testing on Google Play.
+- **[Netcurb](https://iamanwaralam.github.io/projects/netcurb)**: a per-app internet firewall for Android, Linux, Windows and macOS, built from one Kotlin Multiplatform codebase. Live on the [Microsoft Store](https://apps.microsoft.com/detail/9NRSVQMXJ23W), released for Linux and in closed testing on Google Play. Direct downloads on GitHub: [Windows (.msi)](https://github.com/iamanwaralam/netcurb-releases/releases/tag/windows-v1.1.2) · [Linux (.deb, .rpm, Arch)](https://github.com/iamanwaralam/netcurb-releases/releases/tag/linux-v1.1.2).
 - **[LetsEditPDF](https://iamanwaralam.github.io/projects/letseditpdf)**: a free toolkit of 80 PDF and image tools that run entirely in the browser, so files never leave the device. Live at [letseditpdf.com](https://letseditpdf.com).
 - **[Dualfon](https://iamanwaralam.github.io/projects/dualfon)**: an Android app that switches a phone between Data (internet on, every call blocked), Calls (calls on, internet off) and Both, built in Kotlin and Jetpack Compose. In closed testing on Google Play.
 - **[AKIUAE](https://iamanwaralam.github.io/projects/akiuae)**: a corporate site rebuilt on Next.js 14, plus a zero-downtime hosting migration.
@@ -66,7 +66,7 @@ All content lives in `src/data/` as plain TypeScript objects, so there's no CMS.
 **Adding a project:**
 
 1. Add a screenshot to `public/projects/<slug>.jpg` (1200×750).
-2. Add the project to `src/data/projects.ts`. Set `featured: true` to show the Featured badge. If `liveUrl` points to a downloads page, set `download: true` so its buttons say "Download" instead of "Live demo". For apps, add `stores` instead: one entry per platform (`microsoft`, `google-play` or `linux`) with its URL, and each shows as a store button with its logo. Only add a store once the listing is public.
+2. Add the project to `src/data/projects.ts`. Set `featured: true` to show the Featured badge. If `liveUrl` points to a downloads page, set `download: true` so its buttons say "Download" instead of "Live demo". For apps, add `stores` instead: one entry per platform (`microsoft`, `google-play`, `windows` or `linux`; the last two are for direct downloads such as GitHub releases) with its URL, and each shows as a store button with its logo. Only add a store once the listing is public.
 3. Add a case study with the same `slug` to `src/data/caseStudies.ts`. In `overview`, a blank line (`\n\n`) starts a new paragraph and `**text**` is bold.
 4. Add the case study URL to `public/sitemap.xml` and `public/llms.txt`.
 

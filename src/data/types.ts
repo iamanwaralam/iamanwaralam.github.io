@@ -58,7 +58,7 @@ export interface Project {
 
 export interface StoreLink {
   /** Resolved to a brand icon and default label in the UI. */
-  store: 'microsoft' | 'google-play' | 'linux';
+  store: 'microsoft' | 'google-play' | 'windows' | 'linux';
   href: string;
 }
 
