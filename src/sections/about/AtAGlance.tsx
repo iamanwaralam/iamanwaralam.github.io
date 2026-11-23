@@ -46,10 +46,11 @@ export function AtAGlance() {
     {
       icon: GraduationCap,
       label: 'Education',
-      value: EDUCATION[0]?.placeholder
+      // One line per degree (M.Tech, B.E.).
+      value: EDUCATION.some((e) => e.placeholder)
         ? 'Available on request'
-        : `${EDUCATION[0]?.degree} · ${EDUCATION[0]?.institution}`,
-      todo: EDUCATION[0]?.placeholder,
+        : EDUCATION.map((e) => `${e.degree} · ${e.institution}`),
+      todo: EDUCATION.some((e) => e.placeholder),
     },
   ];
 
@@ -69,7 +70,13 @@ export function AtAGlance() {
                 {row.label}
                 {row.todo && <TodoTag />}
               </p>
-              <p className="text-sm font-medium text-foreground">{row.value}</p>
+              <div className="space-y-1.5">
+                {(Array.isArray(row.value) ? row.value : [row.value]).map((line) => (
+                  <p key={line} className="text-sm font-medium text-foreground">
+                    {line}
+                  </p>
+                ))}
+              </div>
             </div>
           </li>
         ))}
