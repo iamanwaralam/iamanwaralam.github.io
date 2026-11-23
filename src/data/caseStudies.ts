@@ -26,9 +26,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     overview: [
       'Netcurb is a per-app internet firewall I designed and built end to end: product, UI design, architecture, native engines, testing and release. Each app gets one switch: blocked apps lose network access while everything else keeps working, and the app collects no data at all.',
       'It started as an Android app and grew into a Kotlin Multiplatform project that shares its data, logic and Compose UI across every platform. Each platform blocks traffic with its own native mechanism.',
-      '**Linux** — publicly released (version 1.1.0). A background systemd service adds nftables rules for each blocked app, and blocking keeps working after a reboot. Ships as .deb, .rpm and Arch packages.',
+      '**Linux** — publicly released (version 1.1.2). A background systemd service adds nftables rules for each blocked app, and blocking keeps working after a reboot. Ships as .deb, .rpm and Arch packages.',
       '**Android** — a local VPN routes only the blocked apps into a tunnel and drops their traffic on the device. In closed testing on Google Play.',
-      '**Windows** — live on the Microsoft Store (version 1.1.1). Windows Defender Firewall rules, managed by a background engine that installs with a single UAC prompt.',
+      '**Windows** — live on the Microsoft Store. Windows Defender Firewall rules, managed by a background engine that installs with a single UAC prompt.',
       '**macOS** — a Swift Network Extension content filter. Built and unit-tested, and waiting for Apple Developer signing.',
     ].join('\n\n'),
     problem: [
@@ -50,10 +50,12 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Testing firewalls automatically: I built GitHub Actions pipelines that run real-firewall integration tests on Windows, Ubuntu (as root) and an Arch container. curl must fail when blocked and work again when unblocked.',
       'Security of privileged engines: making sure other users on the same computer can’t change the rules. This is verified on Windows CI with a temporary second user who is refused access to the engine.',
       'Packaging for many distributions and installers, with upgrade and uninstall scripts that stop, restart and remove the engine and its firewall rules without leaving anything behind.',
+      'Shipping through two stores with different rules: Google Play’s VPN and package-visibility declarations, and the Microsoft Store’s review of the background engine.',
     ],
     results: [
-      'Netcurb for Windows 1.1.1 is live on the Microsoft Store (also installable with winget), after testing on a real Windows 11 laptop: install, blocking, staying blocked after a reboot, upgrades and a clean uninstall.',
-      'Netcurb for Linux 1.1.0 is publicly released as .deb, .rpm and Arch packages, and verified on real Kali Linux and Manjaro PCs.',
+      'Netcurb for Windows is live on the Microsoft Store (also installable with winget), after testing on a real Windows 11 laptop: install, blocking, staying blocked after a reboot, upgrades and a clean uninstall.',
+      'Netcurb for Linux 1.1.2 is publicly released as .deb, .rpm and Arch packages, and verified on real Kali Linux and Manjaro PCs.',
+      'I keep it updated from real use. Version 1.1.2 added a reminder to restart an app after blocking it, so connections the app already had open are cut too.',
       'The Android version is in closed testing on Google Play.',
       'One shared codebase for UI and logic across platforms, backed by 100+ automated tests and CI on Windows, Ubuntu and Arch.',
       'Privacy by design: no accounts, analytics, ads or network requests of its own, and a published privacy policy.',

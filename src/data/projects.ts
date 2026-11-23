@@ -11,13 +11,13 @@ export const PROJECTS: Project[] = [
     slug: 'netcurb',
     title: 'Netcurb — Per-App Internet Firewall',
     description:
-      'Designed and built Netcurb, a per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase — one switch per app, native firewall engines per platform, no root, no data collected. Live on the Microsoft Store, released for Linux, and in closed testing on Google Play.',
+      'Designed and built Netcurb, a per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase: one switch per app, a native firewall engine on each platform, no root and no data collected. Live on the Microsoft Store, released for Linux (.deb, .rpm, Arch) and in closed testing on Google Play.',
     tech: [
       'Kotlin Multiplatform',
       'Compose Multiplatform',
-      'Android',
-      'Linux',
-      'Windows',
+      'Android VpnService',
+      'nftables',
+      'Windows Firewall',
       'Swift',
       'GitHub Actions',
     ],
