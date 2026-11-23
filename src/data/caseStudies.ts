@@ -152,7 +152,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Preserving existing URLs and SEO equity during the platform change.',
     ],
     results: [
-      'Measurably improved load performance — a 91/100 mobile Lighthouse performance score with zero layout shift (tested Aug 2026).',
+      '35% faster on Google’s page-speed measures after the rebuild, with a 91/100 mobile Lighthouse performance score and zero layout shift (tested Aug 2026).',
       'Zero email downtime across the entire migration.',
       'Ongoing organic search improvements, monitored via GA4 and Search Console.',
     ],

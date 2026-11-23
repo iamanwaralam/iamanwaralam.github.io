@@ -32,7 +32,7 @@ export const PROFILE = {
   tagline:
     'Experienced full-stack web developer building reliable, high-performance websites, e-commerce platforms, and digital experiences for UAE businesses.',
   /** Longer about paragraph — mirrors the CV's professional summary verbatim. */
-  bio: 'Experienced full-stack web developer with a background across web and mobile development and professional experience in Dubai. Specializes in building reliable, high-performance websites, e-commerce platforms and digital experiences for UAE businesses. Rebuilt a 32-route corporate platform and led a zero-downtime migration to a cloud hosting platform while preserving Microsoft 365 email services. Combines development expertise with technical SEO, analytics and web infrastructure management.',
+  bio: 'Experienced full-stack web developer with a background across web and mobile development and professional experience in Dubai. Specializes in building reliable, high-performance websites, e-commerce platforms and digital experiences for UAE businesses. Rebuilt a 32-route corporate platform, making it 35% faster on Google’s page-speed measures, and led a zero-downtime migration to a cloud hosting platform while preserving Microsoft 365 email services. Combines development expertise with technical SEO, analytics and web infrastructure management.',
 } as const;
 
 /** Headline stats — grounded in the CV. No exact-duration figures. */
