@@ -66,7 +66,9 @@ export function Hero() {
             className="mt-5 min-h-9 font-display text-2xl font-semibold text-balance sm:min-h-11 sm:text-3xl"
             aria-live="polite"
           >
-            <span className="text-muted-foreground">I&apos;m a </span>
+            <span className="text-muted-foreground">
+              I&apos;m {/^[aeiou]/i.test(role) ? 'an' : 'a'}{' '}
+            </span>
             <span className="text-foreground">
               {role}
               <span className="ml-0.5 inline-block h-6 w-0.5 translate-y-0.5 bg-primary animate-caret sm:h-7" />

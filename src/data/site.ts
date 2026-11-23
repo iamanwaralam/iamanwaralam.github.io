@@ -8,7 +8,7 @@ export const SITE = {
   defaultTitle: 'Anwar Alam — Full-Stack Web Developer | E-commerce & SEO',
   role: 'Full-Stack Web Developer | E-commerce & SEO',
   description:
-    'Anwar Alam is a Full-Stack Web Developer specializing in e-commerce and SEO, based in Dubai, UAE. Available for remote, hybrid, onsite, and freelance work.',
+    'Anwar Alam is a Full-Stack Web Developer specializing in e-commerce and SEO, based in Dubai, UAE, who also builds and ships Android apps. Available for remote, hybrid, onsite, and freelance work.',
   url: 'https://iamanwaralam.github.io',
   ogImage: '/og/og-image.jpg',
   locale: 'en_US',

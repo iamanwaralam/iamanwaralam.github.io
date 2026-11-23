@@ -18,6 +18,7 @@ export const PROFILE = {
    */
   roles: [
     'Full-Stack Web Developer | E-commerce & SEO',
+    'Android App Developer',
     'E-commerce Developer',
     'SEO Specialist',
     'Shopify Developer',
