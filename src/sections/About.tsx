@@ -63,7 +63,7 @@ export function About() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-80px' }}
-        className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+        className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5 [&>*:last-child]:sm:col-span-2 [&>*:last-child]:lg:col-span-1"
       >
         {HIGHLIGHTS.map((h) => (
           <motion.div key={h.title} variants={fadeUp}>

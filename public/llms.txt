@@ -2,7 +2,7 @@
 
 > Full-Stack Web Developer based in Dubai, UAE, specializing in e-commerce and SEO — Next.js, Shopify, and WordPress-to-Next.js migrations.
 
-Anwar Alam rebuilds corporate and product sites as fast, modern Next.js applications, ships custom Shopify themes and headless storefronts, and drives the SEO and infrastructure work that keeps them discoverable. Currently Web Developer & SEO Specialist at AK International LLC (Dubai, UAE), where he also manages the Esthica e-commerce store on Shopify. Formerly an Android/Flutter developer with published Google Play apps. Core stack: Next.js, React, TypeScript, Tailwind CSS, Shopify, WordPress, Flutter, GA4, cloud hosting platforms. Available for remote, hybrid, onsite, and freelance work.
+Anwar Alam rebuilds corporate and product sites as fast, modern Next.js applications, ships custom Shopify themes and headless storefronts, and drives the SEO and infrastructure work that keeps them discoverable. Currently Web Developer & SEO Specialist at AK International LLC (Dubai, UAE), where he also manages the Esthica e-commerce store on Shopify. He also builds and ships his own apps: Netcurb (a Kotlin Multiplatform per-app internet firewall, live on the Microsoft Store), Dualfon (a native Kotlin and Jetpack Compose Android app) and LetsEditPDF (a free in-browser PDF toolkit); earlier he was an Android/Flutter developer with published Google Play apps. Core stack: Next.js, React, TypeScript, Tailwind CSS, Shopify, WordPress, Kotlin, Jetpack Compose, Kotlin Multiplatform, Flutter, GA4, cloud hosting platforms. Available for remote, hybrid, onsite, and freelance work.
 
 ## Key Pages
 

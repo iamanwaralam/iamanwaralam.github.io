@@ -31,6 +31,13 @@ export const SKILLS: Skill[] = [
   { name: 'Headless Commerce', category: 'E-commerce & CMS' },
 
   // Mobile & Backend Services
+  { name: 'Kotlin', category: 'Mobile & Backend Services' },
+  { name: 'Jetpack Compose', category: 'Mobile & Backend Services' },
+  { name: 'Kotlin Multiplatform', category: 'Mobile & Backend Services' },
+  { name: 'Compose Multiplatform', category: 'Mobile & Backend Services' },
+  { name: 'Hilt', category: 'Mobile & Backend Services' },
+  { name: 'Room', category: 'Mobile & Backend Services' },
+  { name: 'Swift', category: 'Mobile & Backend Services' },
   { name: 'Flutter', category: 'Mobile & Backend Services' },
   { name: 'Dart', category: 'Mobile & Backend Services' },
   { name: 'Android (Java)', category: 'Mobile & Backend Services' },
@@ -54,6 +61,7 @@ export const SKILLS: Skill[] = [
   { name: 'Git', category: 'Tools & Delivery' },
   { name: 'GitHub', category: 'Tools & Delivery' },
   { name: 'CI/CD', category: 'Tools & Delivery' },
+  { name: 'GitHub Actions', category: 'Tools & Delivery' },
   { name: 'Gradle', category: 'Tools & Delivery' },
   { name: 'Claude Code', category: 'Tools & Delivery' },
   { name: 'MCP', category: 'Tools & Delivery' },

@@ -22,6 +22,10 @@ import {
   SiGithub,
   SiGradle,
   SiClaude,
+  SiKotlin,
+  SiJetpackcompose,
+  SiSwift,
+  SiGithubactions,
 } from 'react-icons/si';
 import { cn } from '@/lib/utils';
 
@@ -52,6 +56,13 @@ const TECH: Record<string, TechDef> = {
   'Headless Commerce': { fallback: 'HC' },
 
   // Mobile & Backend Services
+  Kotlin: { Icon: SiKotlin, color: '#7F52FF' },
+  'Jetpack Compose': { Icon: SiJetpackcompose, color: '#4285F4' },
+  'Kotlin Multiplatform': { Icon: SiKotlin, color: '#7F52FF' },
+  'Compose Multiplatform': { Icon: SiJetpackcompose, color: '#4285F4' },
+  Hilt: { fallback: 'Hilt' },
+  Room: { fallback: 'Room' },
+  Swift: { Icon: SiSwift, color: '#F05138' },
   Flutter: { Icon: SiFlutter, color: '#02569B' },
   Dart: { Icon: SiDart, color: '#0175C2' },
   'Android (Java)': { Icon: SiAndroid, color: '#3DDC84' },
@@ -75,6 +86,7 @@ const TECH: Record<string, TechDef> = {
   Git: { Icon: SiGit, color: '#F05032' },
   GitHub: { Icon: SiGithub },
   'CI/CD': { fallback: 'CI' },
+  'GitHub Actions': { Icon: SiGithubactions, color: '#2088FF' },
   Gradle: { Icon: SiGradle, color: '#02303A' },
   'Claude Code': { Icon: SiClaude, color: '#D97757' },
   MCP: { fallback: 'MCP' },

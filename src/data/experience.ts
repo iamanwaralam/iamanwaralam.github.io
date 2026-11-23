@@ -25,16 +25,19 @@ export const EXPERIENCE: ExperienceItem[] = [
     stack: ['Next.js', 'WordPress', 'React Native', 'Shopify', 'Shopify Headless', 'SEO', 'Microsoft 365'],
   },
   {
-    company: 'Independent E-commerce & Web Projects',
+    company: 'Independent Web, E-commerce & App Projects',
     role: 'Freelance Full-Stack & E-commerce Developer (Part-time)',
     location: 'Dubai, UAE',
     period: '2023 — Present',
     responsibilities: [
       'Independently built, write for, and run techsavvyhelp.com — a WordPress site publishing Windows troubleshooting guides — owning site development, content, keyword research, and technical & on-page SEO end-to-end.',
       'Developed a fast, SEO-friendly Next.js content platform for Flavor & Figures, a Dubai food media channel.',
+      'Designed and built Netcurb, a per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase — live on the Microsoft Store, released for Linux and in closed testing on Google Play.',
+      'Designed and built Dualfon, a native Kotlin and Jetpack Compose Android app that switches a phone between data-only and calls-only modes, now in closed testing on Google Play.',
+      'Designed and built LetsEditPDF (letseditpdf.com), a free Next.js toolkit of 80 PDF and image tools that run entirely in the browser.',
       'Integrated GitHub, Figma and deployment tools into an AI-assisted development workflow.',
     ],
-    stack: ['Next.js', 'WordPress', 'SEO', 'GitHub', 'Figma', 'MCP'],
+    stack: ['Next.js', 'WordPress', 'Kotlin', 'Jetpack Compose', 'SEO', 'GitHub Actions', 'MCP'],
   },
   {
     company: 'ArhamTechMind',
