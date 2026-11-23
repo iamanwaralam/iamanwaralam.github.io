@@ -26,6 +26,10 @@ import {
   SiJetpackcompose,
   SiSwift,
   SiGithubactions,
+  SiElementor,
+  SiFigma,
+  SiGoogle,
+  SiPagespeedinsights,
 } from 'react-icons/si';
 import { cn } from '@/lib/utils';
 
@@ -85,6 +89,10 @@ const TECH: Record<string, TechDef> = {
   // Tools & Delivery
   Git: { Icon: SiGit, color: '#F05032' },
   GitHub: { Icon: SiGithub },
+  Elementor: { Icon: SiElementor, color: '#92003B' },
+  'Core Web Vitals': { Icon: SiPagespeedinsights, color: '#4285F4' },
+  'Google Workspace': { Icon: SiGoogle, color: '#4285F4' },
+  Figma: { Icon: SiFigma, color: '#F24E1E' },
   'CI/CD': { fallback: 'CI' },
   'GitHub Actions': { Icon: SiGithubactions, color: '#2088FF' },
   Gradle: { Icon: SiGradle, color: '#02303A' },

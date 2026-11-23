@@ -28,6 +28,7 @@ export const SKILLS: Skill[] = [
   { name: 'Liquid', category: 'E-commerce & CMS' },
   { name: 'WordPress', category: 'E-commerce & CMS' },
   { name: 'WooCommerce', category: 'E-commerce & CMS' },
+  { name: 'Elementor', category: 'E-commerce & CMS' },
   { name: 'Headless Commerce', category: 'E-commerce & CMS' },
 
   // Mobile & Backend Services
@@ -49,12 +50,14 @@ export const SKILLS: Skill[] = [
   { name: 'Technical SEO', category: 'SEO, Analytics & Infrastructure' },
   { name: 'GA4', category: 'SEO, Analytics & Infrastructure' },
   { name: 'Search Console', category: 'SEO, Analytics & Infrastructure' },
+  { name: 'Core Web Vitals', category: 'SEO, Analytics & Infrastructure' },
   { name: 'Tag Manager', category: 'SEO, Analytics & Infrastructure' },
   { name: 'Google Business Profile', category: 'SEO, Analytics & Infrastructure' },
   { name: 'Web Hosting', category: 'SEO, Analytics & Infrastructure' },
   { name: 'DNS', category: 'SEO, Analytics & Infrastructure' },
   { name: 'cPanel', category: 'SEO, Analytics & Infrastructure' },
   { name: 'Microsoft 365', category: 'SEO, Analytics & Infrastructure' },
+  { name: 'Google Workspace', category: 'SEO, Analytics & Infrastructure' },
   { name: 'SSL', category: 'SEO, Analytics & Infrastructure' },
 
   // Tools & Delivery
@@ -63,6 +66,7 @@ export const SKILLS: Skill[] = [
   { name: 'CI/CD', category: 'Tools & Delivery' },
   { name: 'GitHub Actions', category: 'Tools & Delivery' },
   { name: 'Gradle', category: 'Tools & Delivery' },
+  { name: 'Figma', category: 'Tools & Delivery' },
   { name: 'Claude Code', category: 'Tools & Delivery' },
   { name: 'MCP', category: 'Tools & Delivery' },
 ];

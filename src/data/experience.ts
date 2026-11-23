@@ -17,6 +17,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Led a zero-downtime DNS and hosting migration from GoDaddy to a cloud hosting platform while preserving Microsoft 365 email records without interruption.',
       'Build and maintain corporate websites, product pages and web applications using Next.js and WordPress.',
       'Manage the Esthica e-commerce store on Shopify, including theme updates, product catalog maintenance and payment-gateway support.',
+      'Rebuilt six medical and aesthetic product websites (R3, Ceovia, Skinin, Prizmah, Lapromed, MesoAge), moving most off WordPress so pages load faster and are easier to update.',
       'Built a Next.js headless storefront for Beatryx with checkout integrated into the Esthica Shopify backend.',
       'Manage technical, on-page and off-page SEO, with performance tracked through GA4 and Google Search Console.',
       'Set up Google Business Profile for AK International.',
@@ -31,7 +32,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     period: '2023 — Present',
     responsibilities: [
       'Independently built, write for, and run techsavvyhelp.com — a WordPress site publishing Windows troubleshooting guides — owning site development, content, keyword research, and technical & on-page SEO end-to-end.',
-      'Developed a fast, SEO-friendly Next.js content platform for Flavor & Figures, a Dubai food media channel.',
+      'Built fast, search-friendly Next.js websites for Flavor & Figures, a Dubai food media channel, and AmeerAli, a luxury gifting online store.',
       'Designed and built Netcurb, a per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase — live on the Microsoft Store, released for Linux and in closed testing on Google Play.',
       'Designed and built Dualfon, a native Kotlin and Jetpack Compose Android app that switches a phone between data-only and calls-only modes, now in closed testing on Google Play.',
       'Designed and built LetsEditPDF (letseditpdf.com), a free Next.js toolkit of 80 PDF and image tools that run entirely in the browser.',
