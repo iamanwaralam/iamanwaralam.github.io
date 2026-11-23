@@ -64,8 +64,8 @@ export const EDUCATION: EducationItem[] = [
     period: '',
   },
   {
-    degree: 'B.E., Computer Science',
-    institution: 'Osmania University, India',
+    degree: 'B.E., Computer Science & Engineering',
+    institution: 'Osmania University, Hyderabad, India',
     period: '',
   },
 ];
