@@ -16,6 +16,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { getCaseStudy, getProject } from '@/data/caseStudies';
 import { SITE } from '@/data/site';
+import { STORE_META } from '@/components/common/StoreIcon';
 import { fadeUp, staggerContainer } from '@/animations/variants';
 
 /** Ordered content blocks rendered as icon-led lists. */
@@ -144,8 +145,19 @@ export function CaseStudyPage() {
                 {study.tagline}
               </motion.p>
 
-              {(project.liveUrl || project.githubUrl) && (
+              {(project.liveUrl || project.githubUrl || project.stores?.length) && (
                 <motion.div variants={fadeUp} className="mt-8 flex flex-wrap gap-3">
+                  {project.stores?.map(({ store, href }, i) => {
+                    const { label, icon: Icon } = STORE_META[store];
+                    return (
+                      <Button key={store} asChild variant={i === 0 ? 'gradient' : 'outline'}>
+                        <a href={href} target="_blank" rel="noopener noreferrer">
+                          <Icon aria-hidden />
+                          {label}
+                        </a>
+                      </Button>
+                    );
+                  })}
                   {project.liveUrl && (
                     <Button asChild variant="gradient">
                       <a

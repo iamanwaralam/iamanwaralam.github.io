@@ -11,7 +11,7 @@ export const PROJECTS: Project[] = [
     slug: 'netcurb',
     title: 'Netcurb — Per-App Internet Firewall',
     description:
-      'Designed and built Netcurb, a per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase — one switch per app, native firewall engines per platform, no root, no data collected. Linux version publicly released.',
+      'Designed and built Netcurb, a per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase — one switch per app, native firewall engines per platform, no root, no data collected. Live on the Microsoft Store, released for Linux, and in closed testing on Google Play.',
     tech: [
       'Kotlin Multiplatform',
       'Compose Multiplatform',
@@ -22,10 +22,33 @@ export const PROJECTS: Project[] = [
       'GitHub Actions',
     ],
     category: 'Mobile',
-    liveUrl: 'https://github.com/iamanwaralam/netcurb-releases',
-    download: true,
+    stores: [
+      { store: 'microsoft', href: 'https://apps.microsoft.com/detail/9NRSVQMXJ23W' },
+      { store: 'linux', href: 'https://github.com/iamanwaralam/netcurb-releases' },
+    ],
     featured: true,
     image: '/projects/netcurb.jpg',
+  },
+  {
+    slug: 'letseditpdf',
+    title: 'LetsEditPDF — Private PDF Toolkit',
+    description:
+      'Designed and built LetsEditPDF, a free toolkit of 80 PDF and image tools — edit, sign, merge, compress, OCR, redact, convert — that run entirely in the browser, so files never leave the device. Next.js and TypeScript, with PDF processing, OCR and encryption done client-side.',
+    tech: ['Next.js 15', 'React 19', 'TypeScript', 'Tailwind CSS', 'pdf-lib', 'PDF.js', 'Tesseract.js', 'SEO'],
+    category: 'Web',
+    liveUrl: 'https://letseditpdf.com',
+    featured: true,
+    image: '/projects/letseditpdf.jpg',
+  },
+  {
+    slug: 'dualfon',
+    title: 'Dualfon — Data or Calls Only',
+    description:
+      'Built Dualfon, an Android app that switches a phone between three modes with one tap: Data (internet on, calls blocked), Calls (calls on, internet off) and Both. No internet permission, no accounts, no analytics. In closed testing on Google Play.',
+    // TODO(anwar): confirm the full stack (e.g. Kotlin, Jetpack Compose).
+    tech: ['Android', 'Call Screening API', 'Privacy-first'],
+    category: 'Mobile',
+    image: '/projects/dualfon.jpg',
   },
   {
     slug: 'akiuae',

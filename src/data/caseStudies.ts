@@ -27,8 +27,8 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Netcurb is a per-app internet firewall I designed and built end to end: product, UI design, architecture, native engines, testing and release. Each app gets one switch: blocked apps lose network access while everything else keeps working, and the app collects no data at all.',
       'It started as an Android app and grew into a Kotlin Multiplatform project that shares its data, logic and Compose UI across every platform. Each platform blocks traffic with its own native mechanism.',
       '**Linux** — publicly released (version 1.1.0). A background systemd service adds nftables rules for each blocked app, and blocking keeps working after a reboot. Ships as .deb, .rpm and Arch packages.',
-      '**Android** — a local VPN routes only the blocked apps into a tunnel and drops their traffic on the device. Working on a real phone and preparing for Google Play.',
-      '**Windows** — Windows Defender Firewall rules, managed by a background engine that installs with a single UAC prompt. Tested on a real Windows 11 laptop.',
+      '**Android** — a local VPN routes only the blocked apps into a tunnel and drops their traffic on the device. In closed testing on Google Play.',
+      '**Windows** — live on the Microsoft Store (version 1.1.1). Windows Defender Firewall rules, managed by a background engine that installs with a single UAC prompt.',
       '**macOS** — a Swift Network Extension content filter. Built and unit-tested, and waiting for Apple Developer signing.',
     ].join('\n\n'),
     problem: [
@@ -52,10 +52,41 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Packaging for many distributions and installers, with upgrade and uninstall scripts that stop, restart and remove the engine and its firewall rules without leaving anything behind.',
     ],
     results: [
+      'Netcurb for Windows 1.1.1 is live on the Microsoft Store (also installable with winget), after testing on a real Windows 11 laptop: install, blocking, staying blocked after a reboot, upgrades and a clean uninstall.',
       'Netcurb for Linux 1.1.0 is publicly released as .deb, .rpm and Arch packages, and verified on real Kali Linux and Manjaro PCs.',
-      'The Windows version is tested on a real Windows 11 laptop: install, blocking, staying blocked after a reboot, upgrades and a clean uninstall. Android works on a real phone and is preparing for Google Play.',
+      'The Android version is in closed testing on Google Play.',
       'One shared codebase for UI and logic across platforms, backed by 100+ automated tests and CI on Windows, Ubuntu and Arch.',
       'Privacy by design: no accounts, analytics, ads or network requests of its own, and a published privacy policy.',
+    ],
+  },
+  {
+    slug: 'letseditpdf',
+    tagline:
+      'Eighty PDF and image tools that do all their work inside the browser — no uploads, no account, no watermarks.',
+    overview:
+      'LetsEditPDF is a free online PDF toolkit I designed and built end to end: product, brand, UI, the PDF engines, SEO and deployment. Most PDF sites upload your document to their servers; here the browser does the processing, so contracts, IDs and bank statements stay on the user’s device. It covers editing existing text, signing, form filling and creation, merging, splitting, compression, OCR, redaction, password protection, conversions to and from Word, Excel, PowerPoint, images and Markdown, plus a set of image tools.',
+    problem: [
+      'People need to edit and convert sensitive documents, but popular PDF sites upload every file to a server.',
+      'Heavy jobs such as OCR, encryption, redaction and Office conversion are normally done on servers with native software.',
+      'A tool site with 80 pages has to be fast on phones, easy to navigate and genuinely useful to search engines, not thin pages.',
+    ],
+    solution: [
+      'Next.js 15 App Router with React 19 and strict TypeScript; every tool is defined once in a single registry that drives the home grid, menus, tool pages, footer and sitemap.',
+      'PDF engines in the browser: pdf-lib to write, Mozilla’s PDF.js to read and render, Tesseract.js for OCR with an invisible searchable text layer, and AES-256 encryption plus decryption of older RC4/AES PDFs written on top of the Web Crypto API.',
+      'True redaction: a secure mode that re-renders redacted pages with the boxes burned in, and a text mode that deletes the glyphs under each box instead of just covering them.',
+      'A full editor (edit existing text, images, shapes, drawing, signatures, form fields) that works with touch on phones, with a bottom-sheet properties panel.',
+      'SEO built in: a written guide, steps and FAQ for every tool, structured data, a sitemap, IndexNow, and consent-gated Google Analytics behind a strict Content Security Policy.',
+    ],
+    challenges: [
+      'Doing server-grade work inside a browser tab: memory limits, long-running OCR, and decoding fonts, images and encrypted files in JavaScript.',
+      'Editing existing PDF text so the old characters are really removed, not hidden under a white box.',
+      'Keeping 80 tools working: an automated headless-Chrome suite runs every tool end to end and checks it produces a file.',
+      'Fitting a desktop-class editor and toolbars onto a phone screen without losing features.',
+    ],
+    results: [
+      '80 free tools live at letseditpdf.com, with no sign-up, no watermarks and no file uploads for browser tools.',
+      'Indexed by Google shortly after launch; Google’s AI Overview describes it as a free, browser-based PDF toolset.',
+      'One shared codebase and registry, so adding a tool updates navigation, pages and the sitemap automatically.',
     ],
   },
   {

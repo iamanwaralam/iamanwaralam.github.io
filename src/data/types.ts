@@ -49,9 +49,17 @@ export interface Project {
   /** liveUrl points to a downloads page, so links read "Download" instead. */
   download?: boolean;
   githubUrl?: string;
+  /** App-store / download links, shown as one button per platform. */
+  stores?: StoreLink[];
   /** Path under /public; falls back to a generated cover if absent. */
   image?: string;
   featured?: boolean;
+}
+
+export interface StoreLink {
+  /** Resolved to a brand icon and default label in the UI. */
+  store: 'microsoft' | 'google-play' | 'linux';
+  href: string;
 }
 
 export type ProjectCategory =

@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { fadeUp } from '@/animations/variants';
 import { hasCaseStudy } from '@/data/caseStudies';
+import { STORE_META } from '@/components/common/StoreIcon';
 import type { Project } from '@/data/types';
 
 /**
@@ -61,8 +62,8 @@ export function ProjectCard({ project }: { project: Project }) {
             ))}
           </div>
 
-          {(project.liveUrl || project.githubUrl || caseStudy) && (
-            <div className="mt-5 flex items-center gap-4 border-t border-border pt-4">
+          {(project.liveUrl || project.githubUrl || project.stores?.length || caseStudy) && (
+            <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-4">
               {caseStudy && (
                 <Link
                   to={`/projects/${project.slug}`}
@@ -87,6 +88,21 @@ export function ProjectCard({ project }: { project: Project }) {
                   {project.download ? 'Download' : 'Live demo'}
                 </a>
               )}
+              {project.stores?.map(({ store, href }) => {
+                const { label, icon: Icon } = STORE_META[store];
+                return (
+                  <a
+                    key={store}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground transition-colors hover:text-primary-text"
+                  >
+                    <Icon className="size-3.5" aria-hidden />
+                    {label}
+                  </a>
+                );
+              })}
               {project.githubUrl && (
                 <a
                   href={project.githubUrl}

@@ -11,9 +11,14 @@ Anwar Alam rebuilds corporate and product sites as fast, modern Next.js applicat
 - [Resume (PDF)](https://iamanwaralam.github.io/resume/Anwar_Alam_Full_Stack_Web_Developer_Dubai_CV.pdf): One-page CV
 - [Contact](https://iamanwaralam.github.io/#contact): Contact form, email, WhatsApp, LinkedIn, GitHub
 
+## Live Products
+
+- [Netcurb on the Microsoft Store](https://apps.microsoft.com/detail/9NRSVQMXJ23W): Per-app internet firewall for Windows.
+
 ## Case Studies
 
-- [Netcurb — Per-App Internet Firewall](https://iamanwaralam.github.io/projects/netcurb): Designed and built a privacy-first per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase, with native firewall engines per platform (VpnService, nftables/cgroups, Windows Firewall). Linux version publicly released.
+- [Netcurb — Per-App Internet Firewall](https://iamanwaralam.github.io/projects/netcurb): Designed and built a privacy-first per-app internet firewall for Android, Linux and Windows from one Kotlin Multiplatform codebase, with native firewall engines per platform (VpnService, nftables/cgroups, Windows Firewall). Live on the Microsoft Store (https://apps.microsoft.com/detail/9NRSVQMXJ23W) and released for Linux.
+- [LetsEditPDF — Private PDF Toolkit](https://iamanwaralam.github.io/projects/letseditpdf): Designed and built a free toolkit of 80 PDF and image tools (edit, sign, merge, compress, OCR, redact, convert) that run entirely in the browser with Next.js, pdf-lib, PDF.js and Tesseract.js, so files never leave the device. Live at https://letseditpdf.com.
 - [AKIUAE Corporate Website](https://iamanwaralam.github.io/projects/akiuae): Rebuilt a Dubai distributor's corporate site as a Next.js 14 application with 32 statically generated routes, then led a zero-downtime DNS & hosting migration from GoDaddy to a cloud hosting platform.
 - [Esthica — Shopify Store](https://iamanwaralam.github.io/projects/esthica): Built and manages the Esthica Shopify store for AK International — theme, catalog, payment integration, and ongoing marketing/social media management.
 - [Beatryx — Headless Storefront](https://iamanwaralam.github.io/projects/beatryx): Next.js headless storefront built as part of AK International's work, with checkout integrated directly into the Esthica Shopify backend.
